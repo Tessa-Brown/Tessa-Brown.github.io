@@ -41,6 +41,22 @@ header img, .headings {
     height: 100px; 
     width: auto;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3C6E7;
+}
+
+a:hover {
+    color: teal;
+}
+
+#active{
+    color:teal;
+}
   .town img{
      width : 800px;
      height : auto;
@@ -156,30 +172,25 @@ footer {
            }
 
     .large {
-            display: inline;
+            margin: 0rem;
+            display: inline-block;
             text-align : center;
             font-family: 'Sarabun', sans-serif;
-            font-size : 30px;
+            font-size : 25px;
             color : #656565;
-            background-color : #BED8D4 
-        }
-        nav a {
-            display: inline;
-            padding: 5px;
-            text-decoration: none;
-            border-width: 0px 0px 1px 0px;
-            border-style: solid;
-            }
+            background: #BED8D4;
+            width: 100%;
         
-        ul {
-            list-style-type : none;
-            padding : 0em;
-            margin : 0em;
-            line-height : 50px;
         }
-        
-        a  {
-            text-decoration: none;
-            color :  #656565;
+    nav li {
+        display:inline;
+        background-color: #BED8D4;
+
+    }
+    nav a {
+        display: inline-block;
+        padding: .5rem;
+        color: #656565;
+        background: #BED8D4;
         }
  }
