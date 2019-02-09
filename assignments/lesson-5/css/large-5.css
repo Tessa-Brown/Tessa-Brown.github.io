@@ -2,10 +2,9 @@
   
 
 * { font-family: 'Sarabun', sans-serif; }
- 
 
 header, nav, main, footer {
-    margin: 0rem auto;
+    margin: .5rem auto;
     padding: .25rem;
     max-width : auto;
 }
@@ -42,47 +41,12 @@ header img, .headings {
     height: 100px; 
     width: auto;
 }
-
-nav {
-    font-family: 'Sarabun', sans-serif;
-    font-size : 30px;
-    color : #656565;
-    background-color : #BED8D4;
-
-}
-
-ul {
-    list-style-type : none;
-    padding : 0em;
-    margin : 0em;
-}
-
-a  {
-    color :  #656565;
-}
-
-.title {
-    text-align: center;
-    line-height: 8px;  
-    font-family: 'Sarabun', sans-serif;
-    color : #3C6E71
-
-}
-
-a:active, a:hover {
-    box-sizing : border-box;
-    background: rgb(64, 168, 174);
-    color: white
-   
-  }
-
   .town img{
-     width : 900px;
+     width : 800px;
      height : auto;
     display : block;
     margin-left : auto;
     margin-right : auto;
-
   }
 
 .summary {
@@ -99,31 +63,9 @@ a:active, a:hover {
 
 }
 
-.forecast {
-    position : relative;
-    top: -150px;
-    text-align : center;
-}
-
-table, tr, th {
-    color:black; 
-    border: 1px solid #f3f5e9;
-    background-color: #BED8D4;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  table {
-      width: 40%;
-  }
-
-
 article {
     width : 800px;
-    height: 250px;
-    position: relative;
-    top: -100px;
-    left: 0px;
+    height: 300px;
     background-color : #BED8D4;
     color : black;
     margin: 0rem auto;
@@ -136,7 +78,7 @@ article img {
     width : 350px;
     position: relative;
     top: -55px;
-    left: 445px;
+    left: 420px;
 }
 
 .contact {
@@ -148,9 +90,7 @@ article img {
     padding: 1rem;
     text-align : left;
     line-height: 3px;
-    position: relative;
-    top: -50px;
-    left: 0px;
+  
 }
 
 .contact img {
@@ -166,39 +106,80 @@ footer {
     height: 30px;
     background-color : #3C6E71;
     color : white;
-    margin: .5rem auto;
+    margin: 0 auto;
     padding: 1rem;
     text-align : left;
     line-height: 3px;
-    position: relative;
-    top: -58px;
-    left: 0px;
     text-align: center;
 }
+@media screen and (min-width: 0px) {
+     
+    .forecast {
+        display : none;
+    }
 
-@media screen and (min-width: 479px) {
-    nav a {
-        display: block;
-        padding: 5px;
-        text-decoration: none;
-        }
+    .large {
+        display: none;
+    }
+    
 
-    li {
-            display : block;
-        }
-}
 
  /* Large devices (laptops/desktops, 992px and up) */
- @media screen and (min-width: 768px) {
-    nav a {
-        display: inline;
-        padding: 5px;
-        text-decoration: none;
-        }
+ @media screen and (min-width: 768px) { 
+     .menu {
+         display: none;
+     }
 
-    li {
-            display : inline;
+     .forecast {
+        display: block;
+        margin: 2rem;
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         }
-  } 
+         
+    table, tr, th {
+         color:black; 
+         border: 1px solid #f3f5e9;
+         background-color: #BED8D4;
+         margin-left: auto;                
+         margin-right: auto;
+         }
+           
+    table {
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+           }
 
- 
+    .large {
+            display: inline;
+            text-align : center;
+            font-family: 'Sarabun', sans-serif;
+            font-size : 30px;
+            color : #656565;
+            background-color : #BED8D4 
+        }
+        nav a {
+            display: inline;
+            padding: 5px;
+            text-decoration: none;
+            border-width: 0px 0px 1px 0px;
+            border-style: solid;
+            }
+        
+        ul {
+            list-style-type : none;
+            padding : 0em;
+            margin : 0em;
+            line-height : 50px;
+        }
+        
+        a  {
+            text-decoration: none;
+            color :  #656565;
+        }
+ }

@@ -7,8 +7,9 @@
     <title>Weather Weekly</title>
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/large-5.css">
     <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+    
 
 </head>
 
@@ -23,7 +24,7 @@
         </section>
      </header>
 
-     <nav>
+     <nav class="large">
             <ul>
                <li><a href=#>Home</a></li>
                <li><a href=#>Preston</a></li>
@@ -33,6 +34,12 @@
                <li><a href=#>Gallery</a></li>
             </ul>
         </nav>
+
+        <nav class="menu">
+            <ul>
+                <li>Menu</li>
+            </ul>
+        </nav>
     
      <main>
         <section class="title">
@@ -40,15 +47,15 @@
         </section>
 
          <section class="town">
-             <img src="images/town.jpeg" alt="This is where summary picture will go">
-         </section>
-        <section class ="summary">
+        <img src="images/town.jpeg" alt="This is where summary picture will go">
+        <aside class ="summary">
                 <h3>Weather Summary</h3>
                 <p>Currently:</p>
                 <p>High:</p>
                 <p>Wind Chill:</p>
                 <p>Humidity:</p>
                 <p>Wind Speed:</p>
+        </aside>
         </section>
 
         <section class="forecast">
