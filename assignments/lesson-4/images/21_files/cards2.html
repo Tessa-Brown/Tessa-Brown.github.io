@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///Users/tessa/Documents/cards2.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>21</title>
+
+</head><body><h1>Let's Play Blackjack!</h1>
+<h3>Try to get the score closest to 21, without going over!</h3>
+
+<script>
+
+function randomOne(){
+   var numOne = Math.floor(Math.random() * 14) + 1 ;
+   var numTwo = Math.floor(Math.random() * 14) + 1;   
+   var total = numOne + numTwo
+   document.getElementById("output1").innerHTML = "Your first card is " + numOne + " and your second card is " + numTwo + ". Right now your total is " + total; 
+}
+</script>
+
+<div id="output1">
+        <h2>Get Your Initial Hand</h2>
+        <button type="button" onclick="randomOne()">What's My Number?</button>        
+</div>
+
+<script>
+function randomThree(){
+   var numThree = Math.floor(Math.random() * 14);  
+   document.getElementById("out").innerHTML = "Your third card is " + numThree; 
+}
+
+function noNum() {
+    document.getElementById("out").innerHTML = "Okay! We won't add any more cards to your hand. Let's see if you won!"
+}
+</script>
+
+<div id="out"> 
+        <h4> Would you like to add another card to your hand?</h4>   
+        <button type="button" onclick="randomThree()">Yes</button> <br>
+        <button type="button" onclick="noNum()">No</button> <br>
+</div>
+
+<script>
+function twentyOne() {
+
+    var sum = 0;
+    var sum = numOne + numTwo + numThree;
+
+        if (sum <= 21) {
+            output = sum;
+        }
+         else {
+        output = "bust";
+         }
+
+         document.getElementById("output").innerHTML = output;
+}
+</script>
+
+
+
+<button type="button" onclick="twentyOne()">Did I win?</button>
+<div id="output"></div>
+
+</body></html>

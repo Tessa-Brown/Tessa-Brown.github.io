@@ -1,0 +1,102 @@
+//small-4.css
+
+* {font-family: 'Sarabun', sans-serif;}
+
+header, nav, main, footer {
+    margin: .5rem auto;
+    padding: .25rem;
+    max-width : auto;
+}
+
+h1 {
+   font-size: 40px;
+   text-align : center;
+    float : center;
+    padding: 0rem;
+}
+
+.motto {
+    font-size : 20px;
+    color : white
+    text-align : center;
+    float : center;
+    padding: 0rem;
+}
+
+header {
+	margin: 10px auto;
+    background-color: #3C6E71;
+    color : white;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    line-height: 8px;  
+    font-family: 'Sarabun', sans-serif;
+     
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+    height: 100px; 
+    width: auto;
+}
+
+nav {
+    text-align : center;
+    font-family: 'Sarabun', sans-serif;
+    font-size : 30px;
+    color : #656565;
+    background-color : #BED8D4 
+}
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    }
+
+
+ul {
+    list-style-type : none;
+    padding : 0em;
+    margin : 0em;
+    line-height : 50px;
+}
+
+a  {
+    text-decoration: none;
+    color :  #656565;
+}
+
+.title {
+    text-align: center;
+    line-height: 8px;  
+    font-family: 'Sarabun', sans-serif;
+    color : #3C6E71
+
+}
+
+a:active, a:hover {
+    box-sizing : border-box;
+    background: rgb(64, 168, 174);
+    color: white
+   
+  }
+
+
+.summary {
+    float : top, left;
+
+}
+
+article {
+    text-align : left;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+
+  
