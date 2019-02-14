@@ -1,0 +1,196 @@
+//large-5.css
+  
+
+* { font-family: 'Sarabun', sans-serif; }
+
+header, nav, main, footer {
+    margin: .5rem auto;
+    padding: .25rem;
+    max-width : auto;
+}
+
+h1 {
+   font-size: 40px;
+   text-align : center;
+    float : center;
+    padding: 0rem;
+}
+
+.motto {
+    font-size : 20px;
+    color : white;
+    text-align : center;
+    float : center;
+    padding: 0rem;
+}
+
+header {
+
+    background-color: #3C6E71;
+    color : white;
+	border: 1px solid #bbb;
+    text-align: center;
+    line-height: 8px;  
+    font-family: 'Sarabun', sans-serif;
+     
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    height: 100px; 
+    width: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3C6E7;
+}
+
+a:hover {
+    color: teal;
+}
+
+#active{
+    color:teal;
+}
+  .town img{
+     width : 800px;
+     height : auto;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+  }
+
+.summary {
+    width : 200px;
+    height: 150px;
+    position : relative;
+    top: -330px;
+    left: -280px;
+    background-color : white;
+    margin: 0rem auto;
+    padding: .25rem;
+    text-align : center;
+    line-height: 3px;
+
+}
+
+article {
+    width : 800px;
+    height: 300px;
+    background-color : #BED8D4;
+    color : black;
+    margin: 0rem auto;
+    padding: 1rem;
+    text-align : left;
+    line-height: 3px;
+}
+
+article img {
+    width : 350px;
+    position: relative;
+    top: -55px;
+    left: 420px;
+}
+
+.contact {
+    width : 900px;
+    height: 200px;
+    background-color : #BED8D4;
+    color : black;
+    margin: .5rem auto;
+    padding: 1rem;
+    text-align : left;
+    line-height: 3px;
+  
+}
+
+.contact img {
+    width : 250px;
+    position: relative;
+    top: -175px;
+    left: 350px;
+}
+
+footer {
+
+    width : 900px;
+    height: 30px;
+    background-color : #3C6E71;
+    color : white;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align : left;
+    line-height: 3px;
+    text-align: center;
+}
+@media screen and (min-width: 0px) {
+     
+    .forecast {
+        display : none;
+    }
+
+    .large {
+        display: none;
+    }
+    
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media screen and (min-width: 768px) { 
+     .menu {
+         display: none;
+     }
+
+     .forecast {
+        display: block;
+        margin: 2rem;
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+         
+    table, tr, th {
+         color:black; 
+         border: 1px solid #f3f5e9;
+         background-color: #BED8D4;
+         margin-left: auto;                
+         margin-right: auto;
+         }
+           
+    table {
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+           }
+
+    .large {
+            margin: 0rem;
+            display: inline-block;
+            text-align : center;
+            font-family: 'Sarabun', sans-serif;
+            font-size : 25px;
+            color : #656565;
+            background: #BED8D4;
+            width: 100%;
+        
+        }
+    nav li {
+        display:inline;
+        background-color: #BED8D4;
+
+    }
+    nav a {
+        display: inline-block;
+        padding: .5rem;
+        color: #656565;
+        background: #BED8D4;
+        }
+ }
