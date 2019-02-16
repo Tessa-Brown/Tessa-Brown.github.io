@@ -1,4 +1,4 @@
-//large-5.css
+//large-6.css
   
 
 * { font-family: 'Sarabun', sans-serif; }
@@ -6,7 +6,11 @@
 header, nav, main, footer {
     margin: .5rem auto;
     padding: .25rem;
-    max-width : auto;
+   
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -20,18 +24,21 @@ h1 {
     font-size : 20px;
     color : white;
     text-align : center;
-    float : center;
     padding: 0rem;
+    margin-left : auto;
+    margin-right : auto;
 }
 
 header {
-
+    width: 100%;
     background-color: #3C6E71;
     color : white;
 	border: 1px solid #bbb;
     text-align: center;
     line-height: 8px;  
     font-family: 'Sarabun', sans-serif;
+    margin-left : auto;
+    margin-right : auto;
      
 }
 
@@ -41,6 +48,9 @@ header img, .headings {
     height: 100px; 
     width: auto;
 }
+
+
+
 
 a:link {
     text-decoration: none;
@@ -57,49 +67,64 @@ a:hover {
 #active{
     color:teal;
 }
-  .town img{
-     width : 800px;
-     height : auto;
-    display : block;
-    margin-left : auto;
-    margin-right : auto;
-  }
+
+.hero {
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0 .5rem 0 .5rem;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+.hero img {
+    display: flex;
+    z-index: 0;
+    object-fit: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .summary {
-    width : 200px;
-    height: 150px;
-    position : relative;
-    top: -330px;
-    left: -280px;
+    float: left;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: .5rem; 
+    width: 40%;
+    height: 30%;
+    text-align: left;
+    font-size: 1.1rem;
     background-color : white;
-    margin: 0rem auto;
-    padding: .25rem;
     text-align : center;
     line-height: 3px;
 
 }
 
 article {
-    width : 800px;
+    width : 90%;
     height: 300px;
     background-color : #BED8D4;
     color : black;
-    margin: 0rem auto;
+    margin: 1rem auto;
     padding: 1rem;
     text-align : left;
     line-height: 3px;
+    margin-left : auto;
+    margin-right : auto;
 }
 
 article img {
-    width : 350px;
-    position: relative;
-    top: -55px;
-    left: 420px;
+    display: block;
+    float: right;
+    height: 70%;
+    margin-top: -30px;
 }
 
 .contact {
-    width : 900px;
-    height: 200px;
+    width : 95%;
+    height: 250px;
     background-color : #BED8D4;
     color : black;
     margin: .5rem auto;
@@ -108,18 +133,16 @@ article img {
     line-height: 3px;
   
 }
-
 .contact img {
-    width : 250px;
-    position: relative;
-    top: -175px;
-    left: 350px;
+ display: block;
+ float: right;
+ height: 90%;
+ margin-top: -150px;
 }
 
 footer {
-
-    width : 900px;
-    height: 30px;
+    width : 95%;
+    height: 50px;   
     background-color : #3C6E71;
     color : white;
     margin: 0 auto;
@@ -134,15 +157,39 @@ footer {
         display : none;
     }
 
-    .large {
+    .navigation {
         display: none;
     }
-    
+
+    .menubutton
+     {
+        display : block;
+        font-size : 30px;
+        background-color : #BED8D4;
+        color : black;
+        margin: 0rem auto;
+        padding: 1rem;
+        text-align : center;
+       
+    }
+    .navlinks{
+        display:none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navlinks_show{
+        display:block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
 
 
  /* Large devices (laptops/desktops, 992px and up) */
- @media screen and (min-width: 768px) { 
-     .menu {
+ @media screen and (min-width: 800px) { 
+     .menubutton {
          display: none;
      }
 
@@ -171,26 +218,40 @@ footer {
           margin-right: auto;
            }
 
-    .large {
+    .navigation {
             margin: 0rem;
             display: inline-block;
             text-align : center;
             font-family: 'Sarabun', sans-serif;
-            font-size : 25px;
+            font-size : 15px;
             color : #656565;
             background: #BED8D4;
             width: 100%;
-        
         }
+
     nav li {
-        display:inline;
+        display:inline-block;
         background-color: #BED8D4;
 
     }
+
     nav a {
         display: inline-block;
         padding: .5rem;
         color: #656565;
         background: #BED8D4;
         }
- }
+
+    .navlinks{
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    .navlinks_show{
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
