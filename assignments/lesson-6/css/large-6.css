@@ -1,22 +1,14 @@
-//large-6.css
+//large-6
   
 
-* { font-family: 'Sarabun', sans-serif; }
-
 header, nav, main, footer {
-    margin: .5rem auto;
-    padding: .25rem;
-   
-}
-
-a {
-    text-decoration: none;
+    margin: .5rem;
+    padding: .25rem;  
 }
 
 h1 {
    font-size: 40px;
    text-align : center;
-    float : center;
     padding: 0rem;
 }
 
@@ -38,8 +30,7 @@ header {
     line-height: 8px;  
     font-family: 'Sarabun', sans-serif;
     margin-left : auto;
-    margin-right : auto;
-     
+    margin-right : auto;  
 }
 
 header img, .headings {
@@ -49,15 +40,12 @@ header img, .headings {
     width: auto;
 }
 
-
-
-
 a:link {
     text-decoration: none;
 }
 
 a:active {
-    color: #3C6E7;
+    color: lightblue;
 }
 
 a:hover {
@@ -77,6 +65,7 @@ a:hover {
     background-color: black;
     overflow: hidden;
 }
+
 .hero img {
     display: flex;
     z-index: 0;
@@ -185,8 +174,6 @@ footer {
         padding: 0;
     }
 
-
-
  /* Large devices (laptops/desktops, 992px and up) */
  @media screen and (min-width: 800px) { 
      .menubutton {
@@ -219,20 +206,21 @@ footer {
            }
 
     .navigation {
-            margin: 0rem;
+    
             display: inline-block;
             text-align : center;
             font-family: 'Sarabun', sans-serif;
-            font-size : 15px;
+            font-size : 1rem;
             color : #656565;
             background: #BED8D4;
-            width: 100%;
+            width: 90%;
         }
 
     nav li {
         display:inline-block;
         background-color: #BED8D4;
-
+        font-size: 25px;
+        
     }
 
     nav a {
@@ -240,6 +228,7 @@ footer {
         padding: .5rem;
         color: #656565;
         background: #BED8D4;
+        text-decoration: none;
         }
 
     .navlinks{
@@ -248,6 +237,7 @@ footer {
             margin: 0;
             padding: 0;
         }
+
     .navlinks_show{
             display: block;
             list-style-type: none;
