@@ -1,6 +1,6 @@
 
 /* Large devices (laptops/desktops, 961px and up) */
- @media only screen and (min-width: 961px) { 
+ @media screen and (min-width: 961px) { 
      .menubutton {
          display: none;
      }
@@ -32,8 +32,8 @@
 
     .navigation {
     
-            display: inline-block;
-            text-align : center;
+            display: flex;
+            justify-content: space-evenly;
             font-family: 'Sarabun', sans-serif;
             font-size : 1rem;
             color : #656565;
@@ -49,28 +49,34 @@
     }
 
     nav a {
-        display: inline-block;
+        display: flex;
         padding: .5rem;
         color: #656565;
         background: #BED8D4;
         text-decoration: none;
+        list-style-type: none;
         }
 
     .navlinks{
-            display: block;
+        
+            text-decoration: none;
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
     .navlinks_show{
-            display: block;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
  .wrapper {
+            margin: 0 .5rem .5rem .5rem;
+            padding: 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }

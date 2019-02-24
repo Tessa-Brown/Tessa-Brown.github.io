@@ -46,6 +46,7 @@ a:link {
 }
 
 nav {
+
     text-align : center;
     font-family: 'Sarabun', sans-serif;
     font-size : 30px;
@@ -184,7 +185,32 @@ footer {
     font-size: 3rem;
     color:  #3C6E71;
 }
-     
+
+.wrapper figure {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: .5rem;
+    background-color: #ffffff;
+    border-radius: .2rem;
+}
+
+.wrapper img {
+    border-radius: .2rem;
+    max-width: 100%;
+}
+
+.wrapper figcaption {
+    text-align: center;
+    font-family: 'Sarabun', 'sans-serif';
+    color:  #3C6E71;
+    padding: .5rem;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 501px) { 
     .forecast {
         display : none;
     }
@@ -208,12 +234,14 @@ footer {
         display:none;
         color: gray;
         list-style-type: none;
+        
         margin: 0;
         padding: 0;
     }
     .navlinks_show{
         color: gray;
         display:block;
+        font-size: 1.5rem;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -225,29 +253,7 @@ footer {
         grid-template-columns: 1fr;
         grid-row-gap: 1rem;
     }
-    .wrapper figure {
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0;
-        padding: .5rem;
-        background-color: #ffffff;
-        border-radius: .2rem;
-    }
-
-    .wrapper img {
-        border-radius: .2rem;
-        max-width: 100%;
-    }
-    
-    .wrapper figcaption {
-        text-align: center;
-        font-family: 'Sarabun', 'sans-serif';
-        color:  #3C6E71;
-        padding: .5rem;
-        font-size: 1.25rem;
-    }
+   
     
   
 }
