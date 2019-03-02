@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name = "description" content = "Storm Center">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Storm Center</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/weather.png" alt="Sun and Clouds Clipart">
+       <section class=headings>
+         <h1>Weather&nbsp;Weekly</h1>
+        <div class="motto">
+             <h3><em>Your Weekly Weather&nbsp;Forecast</em></h3>
+        </div>
+        </section>
+     </header>
+
+     <nav>
+            <div class="menubutton">
+                <a onclick="toggleNav()">&#9776; Menu</a>
+            </div>
+            <ul id="navigation" class="navlinks">
+                <li><a href="preston-8.html">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a  class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+    
+     <main>
+        <section class="title">
+            <h1>Storm Center</h1>
+        </section>
+<form method="get" action="thanks.html">
+
+    <fieldset>
+        <legend></legend>
+        <h2>Your Information</h2>
+        <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+        <label class="top">Email<input type="email" name="email" placeholder="me@gmail.com"></label>
+        <label class="top">Phone Number*<input type="tel" name="telephone" placeholder="1235556789" required></label>
+        <label class="top">Zip Code<input type="number" name="zip" required></label>
+    </fieldset>
+
+    <fieldset>
+        <legend></legend>
+        <h2>Storm Information</h2>
+        <label class="top">Storm Date<input type="date" name="stormDate"></label>
+
+        <label class="top">Storm Type<input type="text" name="stormType" list="stormTypes">
+            <datalist id="stormTypes">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist></label>
+        <label class="top">Storm Severity<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span></label>
+
+        <label class="top">Select Storm Region
+        <select name="region">
+        <option selected disabled="disabled"> Select Region</option>
+        <option value="preston">Preston</option>
+        <option value="sodaSprings">Soda Springs</option>
+        <option value="fishHaven">Fish Haven</option></select></label><br>
+
+        <label class="sbs">Are You In Danger?</label>
+        <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+        <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+        <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+ 
+        <label class="top">Additional Comments: <em>(Drag bottom corner to expand)</em><br>
+        <textarea name="comments"></textarea> </label>
+        <input type="submit" name="submitStormData" value="Submit Storm Data" class="submitBtn"><br>
+
+    </fieldset>
+
+<script>
+    function adjustRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;
+    }
+</script>
+
+
+</form>
+        
+        <footer>
+           <p>&copy;2019 Weather Weekly | Tessa Brown</p>
+           <div><span id="date"></span></div>
+        </footer> 
+    </main>
+      
+<script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>
