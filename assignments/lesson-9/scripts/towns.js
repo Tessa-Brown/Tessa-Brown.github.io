@@ -1,4 +1,3 @@
-<script>
     function townData() { 
         var section = document.querySelector('#data');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -39,4 +38,4 @@
             section.appendChild(myArticle);
           } 
         }
-        </script>
+    
