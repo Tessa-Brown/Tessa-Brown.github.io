@@ -90,7 +90,7 @@
         padding: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        text-align: center;
+        justify-content: center;
     }
 
 }
