@@ -271,6 +271,12 @@ form input.submitBtn {
 
 }
 
+/*-------------- Home Page Styling -------------*/
+#town {
+text-align: center;
+
+}
+
 @media screen and (max-width: 501px) { 
     .forecast {
         display : none;
