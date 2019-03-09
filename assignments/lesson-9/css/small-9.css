@@ -272,6 +272,11 @@ form input.submitBtn {
 }
 
 /*-------------- Home Page Styling -------------*/
+#town {
+    margin: 0 .5rem .5rem .5rem;
+    padding: 0;
+}
+
 #town h2 {
 text-align: center; 
 }
