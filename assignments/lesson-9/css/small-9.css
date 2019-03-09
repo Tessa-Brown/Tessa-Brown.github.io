@@ -276,6 +276,7 @@ form input.submitBtn {
     margin: .5rem auto;
     padding: 1rem;
     justify-content: center;
+    height: 1rem;
 }
 
 #town h2 {
