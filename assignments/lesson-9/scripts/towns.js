@@ -14,6 +14,8 @@
             var towns = jsonData['towns'];
 
             for(var i = 0; i < towns.length; i++) {
+            var simplename = towns[i].name.toLowerCase().replace(' ','');;
+            if(simplename == 'preston' || simplename == 'fishhaven' || simplename == 'sodasprings') {
 
             var myArticle = document.createElement('article');
             var townName = document.createElement('h2');
@@ -39,5 +41,5 @@
           } 
         }
     }
-
+    }
     
