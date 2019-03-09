@@ -1,0 +1,89 @@
+
+/* Large devices (laptops/desktops, 961px and up) */
+ @media screen and (min-width: 961px) { 
+     .menubutton {
+         display: none;
+     }
+
+     .forecast {
+        display: block;
+        margin: 2rem;
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+         
+    table, tr, th {
+         color:black; 
+         border: 1px solid #f3f5e9;
+         background-color: #BED8D4;
+         margin-left: auto;                
+         margin-right: auto;
+         }
+           
+    table {
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+           }
+
+    .navigation {
+    
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Sarabun', sans-serif;
+            font-size : 1rem;
+            color : #656565;
+            background: #BED8D4;
+            width: 90%;
+        }
+
+    nav li {
+        display:inline-block;
+        background-color: #BED8D4;
+        font-size: 25px;
+        
+    }
+
+    nav a {
+        display: flex;
+        padding: .5rem;
+        color: #656565;
+        background: #BED8D4;
+        text-decoration: none;
+        list-style-type: none;
+        }
+
+    .navlinks{
+        
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    .navlinks_show{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+ .wrapper {
+            margin: 0 .5rem .5rem .5rem;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    .wrapper figure:hover {
+        box-shadow: 0 .5rem 1rem #666666;
+    }
+
+   
+}
