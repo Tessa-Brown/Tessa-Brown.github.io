@@ -273,8 +273,8 @@ form input.submitBtn {
 
 /*-------------- Home Page Styling -------------*/
 #town {
-    margin: .5rem auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: 1rem auto;
     justify-content: center;
     height: 1rem;
 }
