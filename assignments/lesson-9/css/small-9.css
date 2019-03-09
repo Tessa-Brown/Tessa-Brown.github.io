@@ -286,6 +286,12 @@ text-align: center;
 text-align: center; 
 }
 
+#town img {
+    padding: 2rem;
+    width: 20%;
+
+}
+
 @media screen and (max-width: 501px) { 
     .forecast {
         display : none;
