@@ -11,9 +11,12 @@
         }
        
         function showTowns(jsonData) {
-          var towns = jsonObj['showTowns'];
+            var towns = jsonData['towns'];
 
-          for(var i = 0; i < towns.length; i++) {
+            for(var i = 0; i < towns.length; i++) {
+
+            var simplename = towns[i].name.toLowerCase().replace(' ','');;
+            if(simplename == 'preston' || simplename == 'fishhaven' || simplename == 'sodasprings'){
 
             var myArticle = document.createElement('article');
             var townName = document.createElement('h2');
@@ -28,7 +31,7 @@
             population.textContent = 'Population: ' + towns[i].currentPopulation;
             rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
         
-            }
+        
             myArticle.appendChild(townName);
             myArticle.appendChild(motto);
             myArticle.appendChild(year);
@@ -38,4 +41,6 @@
             section.appendChild(myArticle);
           } 
         }
+    }
+}
     
