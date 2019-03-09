@@ -7,7 +7,7 @@
         request.send();
         request.onload = function() {
           var data = request.response;
-          showTowns(towns);
+          showTowns(data);
         }
        
         function showTowns(jsonData) {
