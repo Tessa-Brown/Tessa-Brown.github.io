@@ -132,7 +132,7 @@ article {
     margin-right : auto;
 }
 
-#article {
+article img {
     display: block;
     float: right;
     height: 70%;
@@ -278,7 +278,6 @@ form input.submitBtn {
 }
 
 #town h2 {
-
 text-align: center; 
 }
 
