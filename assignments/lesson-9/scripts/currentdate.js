@@ -1,3 +1,5 @@
+function getDay() {
+    
 var today = new Date();
 
 var dayOfWeek = new Array(7);
@@ -31,3 +33,5 @@ var year = today.getFullYear();
 var show = weekday + date + ' ' + month + ' ' + year;
 
 document.getElementById("date").innerHTML = show;
+
+}
