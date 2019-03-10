@@ -285,14 +285,6 @@ text-align: center;
 text-align: center; 
 }
 
-#town img {
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
 
 @media screen and (max-width: 501px) { 
     .forecast {
