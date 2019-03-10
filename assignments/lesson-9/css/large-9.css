@@ -86,8 +86,10 @@
     }
 
     #town {
-
+        margin: 0 .5rem .5rem .5rem;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
     }
 }
