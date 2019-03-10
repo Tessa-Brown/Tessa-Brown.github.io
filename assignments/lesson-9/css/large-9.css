@@ -90,7 +90,7 @@
         padding: 1rem auto;
         display: flex;
         width: 30%;
-        justify-content: space-around;
+        justify-content: space-between;
         height: auto;
     }
 
