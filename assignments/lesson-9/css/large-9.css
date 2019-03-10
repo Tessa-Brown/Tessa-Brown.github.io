@@ -89,13 +89,9 @@
         margin: 0 .5rem .5rem .5rem;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 50px, 1fr;
         justify-content: center;
-        width: 30%;
+    
     }
-#town img {
-    width: 30%;
-
-}
 
 }
