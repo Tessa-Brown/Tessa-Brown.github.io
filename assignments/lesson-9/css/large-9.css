@@ -93,6 +93,11 @@
         height: auto;
     }
 
+    #town article {
+        height: auto;
+        justify-content: space-around;
+    }
+
 
 
 }
