@@ -288,7 +288,8 @@ line-height: 2px;
 }
 
 #town img {
-   width: 30%;
+   width: 30px;
+   height: auto;
 }
 
 
