@@ -86,8 +86,8 @@
     }
 
     #town article {
-        margin: 0 .5rem .5rem .5rem;
-        padding: 0;
+        margin: 1rem;
+        padding: 1rem;
         display: flex;
         flex-direction: row;
         width: 80%;
