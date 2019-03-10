@@ -287,10 +287,6 @@ text-align: center;
 line-height: 2px;
 }
 
-#town img {
-   width: 30px;
-   height: auto;
-}
 
 
 @media screen and (max-width: 501px) { 
