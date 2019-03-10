@@ -89,11 +89,9 @@
         margin: 0 .5rem .5rem .5rem;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 60% 60% 60%;
     }
 
-    #town img {
-        height: 20%;
-    }
+    
 
 }
