@@ -89,6 +89,7 @@
         margin: 1rem;
         padding: 1rem;
         display: grid;
+        justify-content: flex-start;
         grid-template-columns: repeat(3, 1fr);
     }
 }
