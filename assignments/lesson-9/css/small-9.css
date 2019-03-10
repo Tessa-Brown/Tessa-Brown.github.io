@@ -279,13 +279,15 @@ form input.submitBtn {
 
 #town h2 {
 text-align: center; 
+line-height: 2px;
 }
 
 #town p {
 text-align: center; 
+line-height: 2px;
 }
 
-#town img{
+#town img {
    width: 30%;
 }
 
