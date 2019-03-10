@@ -89,9 +89,8 @@
         margin: 1rem auto;
         padding: 1rem auto;
         display: flex;
-        width: 30%;
-        justify-content: space-between;
-        height: auto;
+        justify-content: space-evenly;
+    
     }
 
 
