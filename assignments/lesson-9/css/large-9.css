@@ -88,8 +88,8 @@
     #town {
         margin: 1rem auto;
         padding: 1rem auto;
-        display: flex;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
     
     }
 
