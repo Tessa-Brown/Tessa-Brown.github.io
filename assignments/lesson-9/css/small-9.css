@@ -286,7 +286,11 @@ text-align: center;
 }
 
 #town img{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2rem;
+    justify-content: center;
 }
 
 
