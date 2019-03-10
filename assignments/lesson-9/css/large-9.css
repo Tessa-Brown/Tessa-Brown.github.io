@@ -86,8 +86,8 @@
     }
 
     #town {
-        margin: .25rem;
-        padding: .25rem;
+        margin: .25rem auto;
+        padding: .25rem auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }

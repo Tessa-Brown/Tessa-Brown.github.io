@@ -286,8 +286,8 @@ text-align: center;
 }
 
 #town img {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: 1rem auto;
 }
 
 
