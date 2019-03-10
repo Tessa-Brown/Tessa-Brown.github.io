@@ -89,7 +89,7 @@
         margin: 0 .5rem .5rem .5rem;
         padding: 0;
         display: grid;
-        grid-template-columns: 50px, 1fr;
+        grid-template-columns: 50px, 3fr;
         justify-content: center;
     
     }
