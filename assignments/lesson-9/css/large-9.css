@@ -85,7 +85,7 @@
         box-shadow: 0 .5rem 1rem #666666;
     }
 
-    #town article {
+    #town {
         margin: 1rem;
         padding: 1rem;
         display: grid;
