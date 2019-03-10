@@ -91,6 +91,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
+        width: 30%;
     }
+#town img {
+    width: 30%;
+
+}
 
 }
