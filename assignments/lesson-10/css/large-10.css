@@ -86,13 +86,10 @@
     }
 
     .town {
-        display: flex;
-        flex-wrap: nowrap;
-        max-width: 30%;
-        margin: 1rem auto;
-        justify-content: center;
-        font-family: 'Ubuntu', sans-serif;
-        background: #fafafa;
+        margin: 0 .5rem .5rem .5rem;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
       }
 
 }
