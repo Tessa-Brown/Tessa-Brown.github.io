@@ -298,6 +298,11 @@ form input.submitBtn {
     text-align: center;
   
   }
+
+  .town img {
+      display: block;
+      justify-content: center;
+  }
   
 
 

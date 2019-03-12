@@ -85,5 +85,14 @@
         box-shadow: 0 .5rem 1rem #666666;
     }
 
- 
+    .town {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 30%;
+        margin: 1rem auto;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        background: #fafafa;
+      }
+
 }
