@@ -86,10 +86,10 @@
     }
 
     #town {
-            margin: 1rem auto;
-            padding: 1rem auto;
-            display: grid;
-            grid-template-columns: repeat(3, 30%);
+        margin: 1rem auto;
+        padding: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
         
       }
 
@@ -97,7 +97,7 @@
           width: 200px;
           height: auto;
           display: block;
-        justify-content: center;
+          justify-content: center;
       }
 
 }

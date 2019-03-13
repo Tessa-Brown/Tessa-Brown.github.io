@@ -276,7 +276,7 @@ form input.submitBtn {
 #town {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: 90%;
     margin: 1rem auto;
     justify-content: center;
   }
@@ -286,14 +286,15 @@ form input.submitBtn {
     text-align: center;
     width: 98%;
     height: 300px;
-    color: whitesmoke;
-    
   }
   
+  
   #town h2{
-  
     text-align: center;
-  
+  }
+
+  #town p{
+    font-size: 16px;
   }
 
   #town img {
