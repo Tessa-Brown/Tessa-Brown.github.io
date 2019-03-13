@@ -86,11 +86,16 @@
     }
 
     #town {
-        margin: 1rem auto;
-        padding: 1rem auto;
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        
+        flex-flow: row nowrap;
+      }
+
+      #town article {
+        width:100%;
+        flex-flow: column nowrap;
+        align-self: stretch;
+        align-items: center;
+        max-height: 100%;
+        margin-bottom: 0;
       }
 
       #town img {
