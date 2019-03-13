@@ -94,7 +94,8 @@
       }
 
       #town img {
-          width: 80%;
+          width: 30px;
+          height: auto;
       }
 
 }
