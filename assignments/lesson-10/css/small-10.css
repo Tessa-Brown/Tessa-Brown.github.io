@@ -272,42 +272,8 @@ form input.submitBtn {
 }
 
 /*-------------- Home Page Styling -------------*/
-.town {
-    display: flex;
-    flex-wrap: nowrap;
-    max-width: 85%;
-    margin: 1rem auto;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    background: #fafafa;
-  }
-  
-  .town article{
-  
-    
-    margin: 10px;
-    text-align: center;
-    width: 98%;
-    height: 300px;
-    color: whitesmoke;
-    
-  }
-  
-  .town h2{
-  
-    text-align: center;
-  
-  }
 
-  .town img {
-      display: block;
-      justify-content: center;
-  }
-  
-
-
-
-@media screen and (max-width: 501px) { 
+  @media screen and (max-width: 501px) { 
     .forecast {
         display : none;
     }
@@ -351,6 +317,36 @@ form input.submitBtn {
         grid-row-gap: 1rem;
     }
    
+    .town {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 85%;
+        margin: 1rem auto;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        background: #fafafa;
+      }
+      
+      .town article{
+      
+        
+        margin: 10px;
+        text-align: center;
+        width: 98%;
+        height: 300px;
+        color: whitesmoke;
+        
+      }
+      
+      .town h2{
+      
+        text-align: center;
+      
+      }
     
+      .town img {
+          display: block;
+          justify-content: center;
+      }
   
 }
