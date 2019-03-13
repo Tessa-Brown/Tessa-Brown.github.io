@@ -317,19 +317,16 @@ form input.submitBtn {
         grid-row-gap: 1rem;
     }
    
-    .town {
+    #town {
         display: flex;
-        flex-wrap: nowrap;
-        max-width: 85%;
+        flex-flow: column nowrap;
+        width: 100%;
         margin: 1rem auto;
         justify-content: center;
-        font-family: 'Ubuntu', sans-serif;
-        background: #fafafa;
       }
       
-      .town article{
+      #town article{
       
-        
         margin: 10px;
         text-align: center;
         width: 98%;
@@ -338,13 +335,13 @@ form input.submitBtn {
         
       }
       
-      .town h2{
+      #town h2{
       
         text-align: center;
       
       }
     
-      .town img {
+      #town img {
           display: block;
           justify-content: center;
       }
