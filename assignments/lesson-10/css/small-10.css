@@ -298,9 +298,10 @@ form input.submitBtn {
 
   #town img {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    align-items: center;
+    width: 95%;
     height: auto;
+    margin-top: auto;
   }
 
   @media screen and (max-width: 501px) { 
