@@ -99,10 +99,11 @@
       }
 
       #town img {
-          width: 200px;
-          height: auto;
-          display: block;
-          justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
       }
 
 }
