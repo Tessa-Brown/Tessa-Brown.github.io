@@ -101,8 +101,7 @@
       #town img {
         display: flex;
         justify-content: center;
-        width: 80%;
-        height: auto;
+        width: 50%;
       }
 
 }
