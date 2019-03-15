@@ -6,6 +6,8 @@ weatherRequest.send;
 weatherRequest.onload =  function getWeather() {
     let weatherData = JSON.parse(weatherRequest.responseText);
 
+}
+
     function getWeather() {
         console.log(weatherData);
         document.getElementById("current-temp").innerHTML = weatherData;
