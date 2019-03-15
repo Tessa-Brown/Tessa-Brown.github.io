@@ -3,7 +3,7 @@ var apiURLstring = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&
 weatherRequest.open('GET', apiURLstring, true);
 weatherRequest.send();
 
-weatherRequest.onload =  function {
+weatherRequest.onload =  function () {
     
     var weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
