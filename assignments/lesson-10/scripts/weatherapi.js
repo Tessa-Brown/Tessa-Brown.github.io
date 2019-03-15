@@ -3,10 +3,10 @@ var apiURLstring = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&
 request.open('GET', apiURLstring, true);
 weatherRequest.send;
 
-weatherRequest.onload =  function () {
+weatherRequest.onload =  function getWeather() {
     let weatherData = JSON.parse(weatherRequest.responseText);
 
-    function () {
+    function getWeather() {
         console.log(weatherData);
         document.getElementById("current-temp").innerHTML = weatherData;
     }
