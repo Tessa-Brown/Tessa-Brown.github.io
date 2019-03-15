@@ -7,6 +7,6 @@ weatherRequest.onload =  function() {
     
     var weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
-    document.getElementById("current-temp").innerHTML = weatherData.main.temp;
+    document.getElementById("current-temp").innerHTML = parseFloat(weatherData.main.temp);
 
 }
