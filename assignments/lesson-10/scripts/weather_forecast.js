@@ -43,11 +43,13 @@
            conditions.appendChild(wind);
            conditions.appendChild(chilly);
 
+           section.appendChild(conditions);
+    
         }
     }
 
     function forecast(townid) { 
-        var section = document.querySelector('#forecast');
+        var table = document.querySelector('#forecast');
         var requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + townid + "&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
         var forecastRequest = new XMLHttpRequest();
         forecastRequest.open('GET', requestURL, true);
@@ -55,5 +57,40 @@
         forecastRequest.send();
 
         forecastRequest.onload = function() {
-          var data = weatherRequest.response;
-          console.log(data);
+          var forData = forecastRequest.response;
+          console.log(forData);
+
+          var days = [];
+
+          for(var i=0; i<forData.list.length; i++){
+              var dateString = forData.list[i].dt_txt;
+              if(dateString.search('18:00:00') != -1){
+                  days.push(forData.list[i]);
+              }
+
+            for(i=0; i<days.length; i++) { 
+            var fore = document.createElement('div');
+            var day = document.createElement('h2');
+            var icon = document.createElement('img');
+            var temp = document.createElement('p');
+
+            var iconURL = 'https://openweathermap.org/img/w/'+ dayArray[i].weather[0].icon + '.png';
+            var iconDesc = day[i].weather[0].description;
+            var today = new Date(dayArray[i].dt * 1000);
+            var dayOfWeek = today.getDay();
+            var every = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
+
+            day.textContent = every[dayOfWeek];
+            icon.setAttribute('src',iconURL);
+            icdon.setAttribute('alt',iconDesc);
+            
+            fore.appendChild(day);
+            fore.appendChild(icon);
+            fore.appendChild(temp);
+
+            table.appendChild(fore);
+        }
+
+        }
+    }
+}
