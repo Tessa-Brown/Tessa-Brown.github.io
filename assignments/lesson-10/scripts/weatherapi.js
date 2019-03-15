@@ -1,5 +1,3 @@
-function showTemp() {
-    
 var weatherRequest = new XMLHttpRequest();
 var apiURLstring = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
 weatherRequest.open('GET', apiURLstring, true);
@@ -11,5 +9,4 @@ weatherRequest.onload =  function() {
     console.log(weatherData);
     document.getElementById("current-temp").innerHTML = weatherData.main.temp;
 
-}
 }
