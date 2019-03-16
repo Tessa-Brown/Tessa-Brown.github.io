@@ -22,10 +22,14 @@ function conditions(townid) {
 
             var tempF = parseFloat(weatherData.main.temp);
             var speed = parseFloat(weatherData.wind.speed);
-            var chill = findWindChill(tempF, speed); 
-                if (!chill){
-                    chill = tempF;
-                }
+            var chill = windChill(temp, windy);
+            
+            function windChill(tempF2, speed2) {
+                var newS = Math.pow(speed2, 0.16);
+                var f = (35.74 + (0.6215 * tempF2)) - (35.75 * newS) + ((0.4275 * tempF2) * newS);
+                var chill = Math.round(f*10)/10
+                return chill;
+                } 
 
             heading.textContent = 'Weather Summary';
             current.textContent = 'Currently: ' + weatherData.weather[0].main;
@@ -61,8 +65,6 @@ function forecast(townid){
             
 
             var days = [];
-
-            //figure out where high noon timestamps are and populate the array
             for(var i=0; i<fore.list.length; i++){
                 var dateString = fore.list[i].dt_txt;
                 if(dateString.search('18:00:00') != -1){
@@ -83,9 +85,9 @@ function forecast(townid){
                 var allDays = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat']
 
                 foreBox.setAttribute('class','forecast');
-                day.textContent = allDays[dayOfWeek];
+                day.textContent = allDays[currentDay];
                 icon.setAttribute('src',iconURL);
-                icon.setAttribute('alt',iconDesc);
+                icon.setAttribute('alt',iconDes);
                 temp.innerHTML = 
 
                 foreBox.appendChild(day);
