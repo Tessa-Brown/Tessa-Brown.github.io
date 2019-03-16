@@ -85,8 +85,7 @@ function forecast(townid){
                 var today = new Date(days[i].dt * 1000);
                 var currentDay = today.getDay();
                 var allDays = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat']
-
-                foreBox.setAttribute('class','forecast');
+                
                 day.textContent = allDays[currentDay];
                 icon.setAttribute('src',iconURL);
                 icon.setAttribute('alt',iconDes);
