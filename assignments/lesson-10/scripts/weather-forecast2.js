@@ -22,7 +22,7 @@ function conditions(townid) {
 
             var tempF = parseFloat(weatherData.main.temp);
             var speed = parseFloat(weatherData.wind.speed);
-            var chill = windChill(temp, windy);
+            var chill = windChill(current, windy);
 
             function windChill(tempF2, speed2) {
                 var newS = Math.pow(speed2, 0.16);
@@ -88,7 +88,7 @@ function forecast(townid){
                 day.textContent = allDays[currentDay];
                 icon.setAttribute('src',iconURL);
                 icon.setAttribute('alt',iconDes);
-                temp.innerHTML = 
+                temp.innerHTML = fore.list[i].main.temp_max.toFixed(0) + '&deg; F';
 
                 foreBox.appendChild(day);
                 foreBox.appendChild(icon);
