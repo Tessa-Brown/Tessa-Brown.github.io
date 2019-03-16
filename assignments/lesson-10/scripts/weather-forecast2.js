@@ -13,7 +13,7 @@ function conditions(townid) {
             console.log(weatherData);
 
             var description = weatherData.weather[0].main;
-            var temp = parseFloat(weaterData.main.temp);
+            var temp = parseFloat(weatherData.main.temp);
             var humid = weatherData.main.humidity;
             var windOut = parseFloat(weatherData.wind.speed);
 
@@ -77,7 +77,7 @@ function forecast(townid){
             }
 
             for(i=0; i<days.length; i++){
-                var foreBox = document.createElement('div');
+                var foreBox = document.createElement('article');
                 var day = document.createElement('h3');
                 var icon = document.createElement('img');
                 var temp = document.createElement('p');
