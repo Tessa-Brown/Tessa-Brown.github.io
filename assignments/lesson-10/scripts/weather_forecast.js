@@ -1,6 +1,6 @@
   function currentWeather(townid) { 
         var section = document.querySelector('#summary');
-        var requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + townid + "&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
+        var requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
         var weatherRequest = new XMLHttpRequest();
         weatherRequest.open('GET', requestURL, true);
         weatherRequest.responseType = 'json';
@@ -50,7 +50,7 @@
 
     function forecast(townid) { 
         var table = document.querySelector('#forecast');
-        var requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + townid + "&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
+        var requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
         var forecastRequest = new XMLHttpRequest();
         forecastRequest.open('GET', requestURL, true);
         forecastRequest.responseType = 'json';
@@ -74,9 +74,9 @@
             var icon = document.createElement('img');
             var temp = document.createElement('p');
 
-            var iconURL = 'https://openweathermap.org/img/w/'+ dayArray[i].weather[0].icon + '.png';
+            var iconURL = 'https://openweathermap.org/img/w/'+ days[i].weather[0].icon + '.png';
             var iconDesc = day[i].weather[0].description;
-            var today = new Date(dayArray[i].dt * 1000);
+            var today = new Date(days[i].dt * 1000);
             var dayOfWeek = today.getDay();
             var every = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
 
