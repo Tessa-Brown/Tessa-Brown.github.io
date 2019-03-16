@@ -2,7 +2,7 @@ function conditions(townid) {
     var container = document.querySelector('#summary');
     var weatherRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/weather?id=' + townid 
-                        + '&APPID=d7bbba8e044ce8818ee15bb8d54d90c1&units=Imperial';
+                        + '&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial';
 
         weatherRequest.open('GET',apiURLString, true);
         weatherRequest.responseType = 'json';
@@ -23,7 +23,7 @@ function conditions(townid) {
             var tempF = parseFloat(weatherData.main.temp);
             var speed = parseFloat(weatherData.wind.speed);
             var chill = windChill(temp, windy);
-            
+
             function windChill(tempF2, speed2) {
                 var newS = Math.pow(speed2, 0.16);
                 var f = (35.74 + (0.6215 * tempF2)) - (35.75 * newS) + ((0.4275 * tempF2) * newS);
@@ -54,7 +54,7 @@ function forecast(townid){
     var table = document.querySelector('#forecast');
     var forecastRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/forecast?id=' + townid 
-                        + '&APPID=d7bbba8e044ce8818ee15bb8d54d90c1&units=Imperial';
+                        + '&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial';
 
         forecastRequest.open('GET',apiURLString, true);
         forecastRequest.responseType = 'json';
