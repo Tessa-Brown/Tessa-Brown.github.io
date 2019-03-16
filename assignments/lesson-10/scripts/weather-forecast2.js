@@ -22,7 +22,7 @@ function conditions(townid) {
 
             var tempF = parseFloat(weatherData.main.temp);
             var speed = parseFloat(weatherData.wind.speed);
-            var chill = windChill(current, windy);
+            var chill = windChill(current, wind);
 
             function windChill(tempF2, speed2) {
                 var newS = Math.pow(speed2, 0.16);
@@ -51,7 +51,7 @@ function conditions(townid) {
 }
 
 function forecast(townid){
-    var table = document.querySelector('#forecast');
+    var section = document.querySelector('#forecast');
     var forecastRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/forecast?id=' + townid 
                         + '&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial';
@@ -94,7 +94,7 @@ function forecast(townid){
                 foreBox.appendChild(icon);
                 foreBox.appendChild(temp);
 
-                table.appendChild(foreBox);
+                section.appendChild(foreBox);
             }
         }
 }
