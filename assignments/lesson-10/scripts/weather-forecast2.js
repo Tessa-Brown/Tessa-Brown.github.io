@@ -1,4 +1,4 @@
-function currentConditions(townid) {
+function conditions(townid) {
     var container = document.querySelector('#summary');
     var weatherRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/weather?id=' + townid 
