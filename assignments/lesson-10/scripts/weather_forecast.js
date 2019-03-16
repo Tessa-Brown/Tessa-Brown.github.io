@@ -1,4 +1,4 @@
-  function currentWeather(townid) { 
+  function currentWeather() { 
         var section = document.querySelector('#summary');
         var requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
         var weatherRequest = new XMLHttpRequest();
@@ -48,7 +48,7 @@
         }
     }
 
-    function forecast(townid) { 
+    function forecast() { 
         var table = document.querySelector('#forecast');
         var requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial";
         var forecastRequest = new XMLHttpRequest();
