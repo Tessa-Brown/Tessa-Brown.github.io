@@ -48,7 +48,6 @@ function conditions(townid) {
             conditions.appendChild(humidity);
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
-            container.appendChild(conditions); 
         }
 }
 
@@ -85,7 +84,7 @@ function forecast(townid){
                 var today = new Date(days[i].dt * 1000);
                 var currentDay = today.getDay();
                 var allDays = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat']
-                
+
                 day.textContent = allDays[currentDay];
                 icon.setAttribute('src',iconURL);
                 icon.setAttribute('alt',iconDes);
