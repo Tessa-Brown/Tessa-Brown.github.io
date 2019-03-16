@@ -30,6 +30,7 @@
     }
    
     function showTowns(jsonObj) {
+      var towns = request.response;
       var heroes = jsonObj['members'];
       for(var i = 0; i < towns.length; i++) {
         var myArticle = document.createElement('article');
@@ -53,7 +54,7 @@
 
         section.appendChild(myArticle);
       }
-    
+
     </script>
   </body>
 </html>
