@@ -42,14 +42,12 @@ function conditions(townid) {
             wind.textContent = 'Wind Speed: ' + windOut + ' mph';
             chilly.textContent = 'Wind Chill: ' + chill + '&#176; F';
 
-
+            conditions.appendChild(heading);
             conditions.appendChild(current);
             conditions.appendChild(high);
             conditions.appendChild(humidity);
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
-
-            container.appendChild(heading);
             container.appendChild(conditions); 
         }
 }
@@ -97,8 +95,6 @@ function forecast(townid){
                 foreBox.appendChild(day);
                 foreBox.appendChild(icon);
                 foreBox.appendChild(temp);
-
-                section.appendChild(foreBox);
             }
         }
 }
