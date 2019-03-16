@@ -4,13 +4,28 @@ function conditions(townid) {
     var apiURLString = 'https://api.openweathermap.org/data/2.5/weather?id=' + townid 
                         + '&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial';
 
-        weatherRequest.open('GET',apiURLString, true);
+        weatherRequest.open('GET', apiURLString, true);
         weatherRequest.responseType = 'json';
         weatherRequest.send();
         weatherRequest.onload = function(){
             
             var weatherData = weatherRequest.response;
             console.log(weatherData);
+
+            var description = weatherData.weather[0].main;
+            var temp = parseFloat(weaterData.main.temp);
+            var humid = weatherData.main.humidity;
+            var windOut = parseFloat(weatherData.wind.speed);
+
+
+            var chill = windChill(temp, windOut);
+
+            function windChill(tempF2, speed2) {
+                var newS = Math.pow(speed2, 0.16);
+                var f = (35.74 + (0.6215 * tempF2)) - (35.75 * newS) + ((0.4275 * tempF2) * newS);
+                var final = Math.round(f*10)/10
+                return final;
+                } 
 
             var heading = document.createElement('h3');
             var conditions = document.createElement('ul');
@@ -20,22 +35,11 @@ function conditions(townid) {
             var wind = document.createElement('li');
             var chilly = document.createElement('li');
 
-            var tempF = parseFloat(weatherData.main.temp);
-            var speed = parseFloat(weatherData.wind.speed);
-            var chill = windChill(current, wind);
-
-            function windChill(tempF2, speed2) {
-                var newS = Math.pow(speed2, 0.16);
-                var f = (35.74 + (0.6215 * tempF2)) - (35.75 * newS) + ((0.4275 * tempF2) * newS);
-                var chill = Math.round(f*10)/10
-                return chill;
-                } 
-
             heading.textContent = 'Weather Summary';
-            current.textContent = 'Currently: ' + weatherData.weather[0].main;
-            high.innerHTML = 'Temperature: ' + tempF + '&#176; F';
-            humidity.innerHTML = 'Humidity: ' + weatherData.main.humidity + '&#37;';
-            wind.textContent = 'Wind Speed: ' + speed + ' mph';
+            current.textContent = 'Currently: ' + description;
+            high.innerHTML = 'Temperature: ' + temp + '&#176; F';
+            humidity.innerHTML = 'Humidity: ' + humid;
+            wind.textContent = 'Wind Speed: ' + windOut + ' mph';
             chilly.textContent = 'Wind Chill: ' + chill + '&#176; F';
 
 
