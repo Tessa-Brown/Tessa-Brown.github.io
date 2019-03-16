@@ -9,8 +9,10 @@
         weatherRequest.onload = function() {
           var data = weatherRequest.response;
           console.log(data);
+          populateHeader(data);
+        }
 
-    var temp = parseFloat(weatherData.main.temp);
+   /* var temp = parseFloat(weatherData.main.temp);
     var windy = parseFloat(weatherData.wind.speed);
 
     var chill = windChill(temp, windy);
@@ -20,7 +22,9 @@
     var f = (35.74 + (0.6215 * tempF2)) - (35.75 * newS) + ((0.4275 * tempF2) * newS);
     var chill = Math.round(f*10)/10
     return chill;
-    }
+    } */
+
+    function populateHeader (){
             var conditions = document.createElement('article');
             var header = document.createElement('h2');
             var current = document.createElement('p');
@@ -47,6 +51,7 @@
     
         }
     }
+    
 
     function forecast() { 
         var table = document.querySelector('#forecast');
@@ -59,6 +64,8 @@
         forecastRequest.onload = function() {
           var forData = forecastRequest.response;
           console.log(forData);
+          forecast(data);
+        }
 
           var days = [];
 
@@ -93,4 +100,3 @@
 
         }
     }
-}
