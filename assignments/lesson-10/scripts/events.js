@@ -1,5 +1,5 @@
 function townEvents(name) { 
-        var section = document.querySelector('#events');
+        var section = document.document.getElementsByClassName('events');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
@@ -30,8 +30,8 @@ function townEvents(name) {
                     list.appendChild(date);
                 }
                 
-                document.getElementById("events").appendChild(heading);
-                document.getElementById("events").appendChild(list);
+                document.getElementsByClassName("events").appendChild(heading);
+                document.getElementsByClassName("events").appendChild(list);
             }
         }
     }
