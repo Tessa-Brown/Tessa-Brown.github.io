@@ -1,4 +1,4 @@
-function townEvents() { 
+function townEvents(name) { 
         var section = document.querySelector('#events');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
         var request = new XMLHttpRequest();
@@ -14,7 +14,7 @@ function townEvents() {
             var towns = jsonData['towns'];
              for(var i=0; i < towns.length; i++){
            
-            if(towns[i].name == townName){
+            if(towns[i].name == name){
 
                 var events = towns[i].events;
                 var heading = document.createElement('h2');
