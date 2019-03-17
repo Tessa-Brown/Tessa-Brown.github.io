@@ -53,7 +53,7 @@ function conditions(townid) {
         container.appendChild(box);
 }
 
-function forecast(townid){
+function showForecast(townid){
     var section = document.querySelector('#forecast');
     var forecastRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/forecast?id=' + townid 
