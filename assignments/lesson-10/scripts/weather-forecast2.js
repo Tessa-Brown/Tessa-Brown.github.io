@@ -27,6 +27,7 @@ function conditions(townid) {
                 return final;
                 } 
             
+            var container = document.createElement("div");
             var box = document.createElement('article');
             var heading = document.createElement('h3');
             var conditions = document.createElement('ul');
@@ -77,6 +78,7 @@ function showForecast(townid){
             }
 
             for(i=0; i<days.length; i++){
+                var section = document.createElement("div");
                 var foreBox = document.createElement('article');
                 var day = document.createElement('h3');
                 var icon = document.createElement('img');

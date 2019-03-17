@@ -15,7 +15,8 @@ function townEvents(name) {
              for(var i=0; i < towns.length; i++){
            
             if(towns[i].name == name){
-
+                
+                var section = document.createElement("div");
                 var events = towns[i].events;
                 var heading = document.createElement('h2');
                 var list = document.createElement('ul');
