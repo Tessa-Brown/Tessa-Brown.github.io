@@ -52,6 +52,7 @@ function conditions(townid) {
         
         container.appendChild(box);
 }
+}
 
 function showForecast(townid){
     var section = document.querySelector('#forecast');
@@ -95,10 +96,11 @@ function showForecast(townid){
                 foreBox.appendChild(day);
                 foreBox.appendChild(icon);
                 foreBox.appendChild(temp);
-            }
+            
 
             section.appendChild(foreBox);
         }
     }
 }
+
 
