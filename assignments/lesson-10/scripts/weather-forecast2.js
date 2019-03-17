@@ -26,7 +26,8 @@ function conditions(townid) {
                 var final = Math.round(f*10)/10
                 return final;
                 } 
-
+            
+            
             var heading = document.createElement('h3');
             var conditions = document.createElement('ul');
             var current = document.createElement('li');
@@ -49,6 +50,7 @@ function conditions(townid) {
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
         }
+        container.appendChild(conditions);
 }
 
 function forecast(townid){
@@ -94,5 +96,7 @@ function forecast(townid){
                 foreBox.appendChild(icon);
                 foreBox.appendChild(temp);
             }
+
+            section.appendChild(foreBox);
         }
 }
