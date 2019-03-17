@@ -27,7 +27,7 @@ function conditions(townid) {
                 return final;
                 } 
             
-            
+            var box = document.createElement('article');
             var heading = document.createElement('h3');
             var conditions = document.createElement('ul');
             var current = document.createElement('li');
@@ -49,8 +49,8 @@ function conditions(townid) {
             conditions.appendChild(humidity);
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
-        }
-        container.appendChild(conditions);
+        
+        container.appendChild(box);
 }
 
 function forecast(townid){
@@ -99,4 +99,6 @@ function forecast(townid){
 
             section.appendChild(foreBox);
         }
+    }
 }
+
