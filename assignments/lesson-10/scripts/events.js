@@ -30,8 +30,8 @@ function townEvents(name) {
                     list.appendChild(date);
                 }
                 
-                section.appendChild(heading);
-                section.appendChild(list);
+                document.getElementById("events").appendChild(heading);
+                document.getElementById("events").appendChild(list);
             }
         }
     }
