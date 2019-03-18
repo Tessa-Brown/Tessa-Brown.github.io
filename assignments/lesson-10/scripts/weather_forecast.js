@@ -11,7 +11,7 @@
           console.log(data);
           populateHeader(data);
         }
-        
+
 function populateHeader (){
    var temp = parseFloat(weatherData.main.temp);
     var windy = parseFloat(weatherData.wind.speed);
@@ -24,7 +24,7 @@ function populateHeader (){
     var chill = Math.round(f*10)/10
     return chill;
     } 
-        var conditions = document.createElement('article');
+            var conditions = document.createElement('article');
             var header = document.createElement('h2');
             var current = document.createElement('p');
             var high = document.createElement('p');
@@ -63,7 +63,7 @@ function populateHeader (){
         forecastRequest.onload = function() {
           var forData = forecastRequest.response;
           console.log(forData);
-          getFore(data);
+          getFore(forData);
         }
 
         function getFore() { 
@@ -76,7 +76,7 @@ function populateHeader (){
               }
 
             for(i=0; i<days.length; i++) { 
-            var fore = document.createElement('div');
+            var fore = document.createElement('article');
             var day = document.createElement('h2');
             var icon = document.createElement('img');
             var temp = document.createElement('p');
