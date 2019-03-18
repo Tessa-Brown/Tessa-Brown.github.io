@@ -12,6 +12,15 @@ function conditions(townid) {
             var weatherData = weatherRequest.response;
             console.log(weatherData);
 
+    
+            var heading = document.createElement('h3');
+            var conditions = document.createElement('ul');
+            var current = document.createElement('li');
+            var high = document.createElement('li');
+            var humidity = document.createElement('li');
+            var wind = document.createElement('li');
+            var chilly = document.createElement('li');
+
             var description = weatherData.weather[0].main;
             var temp = parseFloat(weatherData.main.temp);
             var humid = weatherData.main.humidity;
@@ -26,32 +35,23 @@ function conditions(townid) {
                 var final = Math.round(f*10)/10
                 return final;
                 } 
-            
-            var container = document.createElement("div");
-            var box = document.createElement('article');
-            var heading = document.createElement('h3');
-            var conditions = document.createElement('ul');
-            var current = document.createElement('li');
-            var high = document.createElement('li');
-            var humidity = document.createElement('li');
-            var wind = document.createElement('li');
-            var chilly = document.createElement('li');
 
             heading.textContent = 'Weather Summary';
             current.textContent = 'Currently: ' + description;
-            high.innerHTML = 'Temperature: ' + temp + '&#176; F';
-            humidity.innerHTML = 'Humidity: ' + humid;
+            high.textContent = 'Temperature: ' + temp + '&#176; F';
+            humidity.textContent = 'Humidity: ' + humid;
             wind.textContent = 'Wind Speed: ' + windOut + ' mph';
             chilly.textContent = 'Wind Chill: ' + chill + '&#176; F';
 
-            conditions.appendChild(heading);
+
             conditions.appendChild(current);
             conditions.appendChild(high);
             conditions.appendChild(humidity);
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
         
-        container.appendChild(box);
+            container.appendChild(heading);
+            container.appendChild(conditions);
 }
 }
 
@@ -78,8 +78,7 @@ function showForecast(townid){
             }
 
             for(i=0; i<days.length; i++){
-                var section = document.createElement("div");
-                var foreBox = document.createElement('article');
+                var foreBox = document.createElement('div');
                 var day = document.createElement('h3');
                 var icon = document.createElement('img');
                 var temp = document.createElement('p');
@@ -90,6 +89,7 @@ function showForecast(townid){
                 var currentDay = today.getDay();
                 var allDays = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat']
 
+               
                 day.textContent = allDays[currentDay];
                 icon.setAttribute('src',iconURL);
                 icon.setAttribute('alt',iconDes);
