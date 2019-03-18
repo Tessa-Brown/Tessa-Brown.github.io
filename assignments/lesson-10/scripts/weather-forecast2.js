@@ -12,7 +12,7 @@ function conditions(townid) {
             var weatherData = weatherRequest.response;
             console.log(weatherData);
 
-    
+            var div = document.createElement('div');
             var heading = document.createElement('h3');
             var conditions = document.createElement('ul');
             var current = document.createElement('li');
@@ -50,6 +50,7 @@ function conditions(townid) {
             conditions.appendChild(wind);
             conditions.appendChild(chilly);
         
+            container.appendChild(div);
             container.appendChild(heading);
             container.appendChild(conditions);
 }
@@ -78,7 +79,8 @@ function showForecast(townid){
             }
 
             for(i=0; i<days.length; i++){
-                var foreBox = document.createElement('div');
+                var div = document.createElement('div');
+                var foreBox = document.createElement('article');
                 var day = document.createElement('h3');
                 var icon = document.createElement('img');
                 var temp = document.createElement('p');
@@ -99,7 +101,7 @@ function showForecast(townid){
                 foreBox.appendChild(icon);
                 foreBox.appendChild(temp);
             
-
+            section.appendChild(div);
             section.appendChild(foreBox);
         }
     }
