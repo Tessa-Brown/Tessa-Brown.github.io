@@ -108,15 +108,14 @@ ul {
 .summary {
     float: left;
     position: absolute;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-top: 1rem;
     padding: .5rem; 
-    width: 30%;
+    width: 20%;
     height: 60%;
     font-size: .75rem;
     background-color : white;
     text-align : center;
-    line-height: .5px;
     font-family: 'Sarabun', 'sans-serif';
 }
 .summary h2 {
