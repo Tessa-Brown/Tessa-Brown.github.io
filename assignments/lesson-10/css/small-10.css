@@ -112,12 +112,15 @@ ul {
     margin-top: 1rem;
     padding: .5rem; 
     width: 30%;
-    height: 80%;
+    height: 60%;
     font-size: .75rem;
     background-color : white;
     text-align : center;
-    line-height: 1px;
+    line-height: .5px;
     font-family: 'Sarabun', 'sans-serif';
+}
+.summary h2 {
+  font-size: 1.25rem;
 }
 
 article {
