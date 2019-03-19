@@ -1,5 +1,5 @@
 function townEvents(name) { 
-        var section = document.querySelector('#events');
+        var section = document.querySelector('.events');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
