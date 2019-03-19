@@ -121,11 +121,6 @@ ul {
     font-family: 'Sarabun', 'sans-serif';
 }
 
-.owlink p {
-    text-align: center;
-    font-family: 'Sarabun', 'sans-serif';
-}
-
 
 article {
     width : 90%;
@@ -174,7 +169,7 @@ article img {
 
 footer {
     width : 95%;
-    height: 50px;   
+    height: 65px;   
     background-color : #3C6E71;
     color : white;
     margin: 0 auto;
