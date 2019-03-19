@@ -111,12 +111,12 @@ ul {
     margin-left: 1rem;
     margin-top: 1rem;
     padding: .5rem; 
-    width: 40%;
-    height: 30%;
-    font-size: .5rem;
+    width: 20%;
+    height: 50%;
+    font-size: 2rem;
     background-color : white;
     text-align : center;
-    line-height: 3px;
+    line-height: 1px;
     font-family: 'Sarabun', 'sans-serif';
 }
 
@@ -134,10 +134,9 @@ article {
 }
 
 article img {
-    display: block;
     float: right;
-    height: 70%;
-    margin-top: -30px;
+    height: 60%;
+    width: auto;
 }
 
 .title {
