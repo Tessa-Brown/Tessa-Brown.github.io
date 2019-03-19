@@ -37,10 +37,10 @@ function conditions(townid) {
 
             heading.textContent = 'Weather Summary';
             current.textContent = 'Currently: ' + description;
-            high.textContent = 'Temperature: ' + temp + '&#176 F';
-            humidity.textContent = 'Humidity: ' + humid;
-            wind.textContent = 'Wind Speed: ' + windOut + ' mph';
-            chilly.textContent = 'Wind Chill: ' + chill + '&#176 F';
+            high.textContent = 'Temperature: ' + temp + '°F';
+            humidity.textContent = 'Humidity: ' + humid + "%";
+            wind.textContent = 'Wind Speed: ' + windOut + 'mph';
+            chilly.textContent = 'Wind Chill: ' + chill + '°F';
 
 
             conditions.appendChild(current);
