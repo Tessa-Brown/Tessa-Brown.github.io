@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name = "description" content = "Start the Town Page for Weather Website Assignment">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather Weekly</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/weather-forecast2.js"></script>
+    <script src="scripts/events.js"></script>
+   
+</head>
+
+<body>
+    <header>
+        <img src="images/weather.png" alt="Sun and Clouds Clipart">
+       <section class=headings>
+         <h1>Weather&nbsp;Weekly</h1>
+        <div class="motto">
+             <h3><em>Your Weekly Weather&nbsp;Forecast</em></h3>
+        </div>
+        </section>
+     </header>
+
+     <nav>
+            <div class="menubutton">
+                <a onclick="toggleNav()">&#9776; Menu</a>
+            </div>
+            <ul id="navigation" class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter-10.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+    
+     <main>
+        <section class="title">
+            <h1>Preston, Idaho</h1>
+        </section>
+
+        <section class="town">
+             <div class="hero">
+                <img src="images/preston.jpg" alt="Town of Preston" sizes = "100vw"
+                    srcset="images/preston_500.jpg 500w,
+                            images/preston_768.jpg 768w, 
+                            images/preston_1366.jpg 1366w,
+                            images/preston_1920.jpg 1920w">
+          
+
+        <div class="summary">
+   
+        </div>
+        </div>
+        </section>
+
+        <div class="foreTitle"><h2>5 Day Forecast</h2></div>
+        <div class="forecast">
+
+        </div>
+
+     
+        <article>
+            <h2>Article Title</h2>
+            <p><em>Author</em></p>
+            <img src="images/park.jpg" alt="This is where article image will go.">
+        </article>
+
+        <div class="events">
+          
+        </div>
+
+        <section class="contact">
+            <h3>Weather Weekly</h3>
+            <p>Address Line 1</p>
+            <p>Address Line 2</p>
+            <br>
+            <p>Phone</p>
+            <p>Email</p>
+            <br>
+            <p>Social</p>
+            <img src="images/map.jpg" alt="This is where the map will go."> 
+        </section>
+
+        <footer>
+           <p>&copy;2019 Weather Weekly | Tessa Brown</p>
+           <div><span id="date"></span></div>
+        </footer> 
+    </main>
+      
+
+
+<script> getDay(); townEvents('Preston'); showForecast('5604473'); conditions('5604473');</script> 
+
+
+
+</body>
+
+</html>
