@@ -106,4 +106,20 @@
         margin-top: auto;
       }
 
+      .summary {
+          font-size: 12px;
+          line-height: 4px;
+          text-align: center;
+          font-family: 'Sarabun', sans-serif;
+      }
+
+      .forecast {
+        display: flex;
+        flex-flow: row nowrap;            
+        justify-content: space-between;
+        margin:0 auto;
+        padding:0;
+        max-width: 90%;
+      }
+
 }
