@@ -106,7 +106,7 @@
         margin-top: auto;
       }
 
-      #summary {
+      #summary li {
           font-size: 12px;
           line-height: 4px;
           text-align: center;
@@ -114,12 +114,17 @@
       }
 
       #forecast {
-        display: flex;
-        flex-flow: row nowrap;            
-        justify-content: space-between;
-        margin:0 auto;
-        padding:0;
-        max-width: 90%;
+        display:flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-self: stretch;
+        margin: .25rem;
+        padding: .5rem;
+        width: 18%;
+        background-color: #ffffff;
+        border: 1px solid #282828;
+        border-radius: .2rem;
+        font-size: 1rem;
       }
 
 }
