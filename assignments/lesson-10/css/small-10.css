@@ -101,7 +101,9 @@ ul {
 .hero img {
     width: 90%;
     height: auto;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
     padding: 0;
 }
 
@@ -146,7 +148,6 @@ article img {
     color : #3C6E71
 
 }
-
 
   .contact {
     width : 95%;
