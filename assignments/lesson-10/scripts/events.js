@@ -16,7 +16,6 @@ function townEvents(name) {
            
             if(towns[i].name == name){
                 
-                var section = document.createElement("div");
                 var events = towns[i].events;
                 var heading = document.createElement('h2');
                 var list = document.createElement('ul');
@@ -33,8 +32,8 @@ function townEvents(name) {
                 
             }
         }
+        section.appendChild(heading);
+        section.appendChild(list);
     }
-            section.appendChild(heading);
-            section.appendChild(list);
         
 }
