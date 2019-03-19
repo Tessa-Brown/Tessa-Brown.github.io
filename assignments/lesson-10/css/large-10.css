@@ -106,14 +106,14 @@
         margin-top: auto;
       }
 
-      .summary {
+      #summary {
           font-size: 12px;
           line-height: 4px;
           text-align: center;
           font-family: 'Sarabun', sans-serif;
       }
 
-      .forecast {
+      #forecast {
         display: flex;
         flex-flow: row nowrap;            
         justify-content: space-between;
