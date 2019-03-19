@@ -121,6 +121,10 @@ ul {
     font-family: 'Sarabun', 'sans-serif';
 }
 
+.owlink p {
+    text-align: center;
+    font-family: 'Sarabun', 'sans-serif';
+}
 
 
 article {
@@ -170,7 +174,7 @@ article img {
 
 footer {
     width : 95%;
-    height: 65px;   
+    height: 50px;   
     background-color : #3C6E71;
     color : white;
     margin: 0 auto;
@@ -307,6 +311,7 @@ form input.submitBtn {
   }
   .events h2 {
     font-size: 3rem;
+    padding: 1rem;
 }
   .events p {
       font-size: 2rem;
