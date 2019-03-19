@@ -38,13 +38,8 @@ header img, .headings {
     padding: .5rem;
 }
 
-a:link {
-    text-decoration: none;
-    list-style-type: none;
-}
 
 nav {
-
     text-align : center;
     font-family: 'Sarabun', sans-serif;
     font-size : 30px;
@@ -55,13 +50,14 @@ nav {
 nav a {
     display: block;
     padding: 5px;
-    list-style-type : none;
+    list-style-type: none;
     text-decoration: none;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     }
 
 nav a:active {
+    
         box-sizing : border-box;
         background: rgb(64, 168, 174);
         color: white
@@ -128,9 +124,8 @@ article {
     background-color : #BED8D4;
     color : black;
     margin: 1rem auto;
-    padding: 1rem auto;
+    padding: 30px;
     text-align : left;
-    line-height: 3px;
     margin-left : auto;
     margin-right : auto;
 }
@@ -150,6 +145,7 @@ article img {
 }
 
   .contact {
+    font-family: 'Sarabun', 'sans-serif';
     width : 95%;
     height: 250px;
     background-color : #BED8D4;
@@ -318,7 +314,7 @@ form input.submitBtn {
     background-color : #BED8D4;
     color : black;
     margin: 1rem auto;
-    padding: 1rem auto;
+    padding: 30px auto;
     text-align : center;;
     line-height: 3px;
     margin-left : auto;
@@ -342,12 +338,13 @@ form input.submitBtn {
         display : block;
         font-size : 30px;
         background-color : #BED8D4;
-        color : black;
+        color : #656565;
         margin: 0rem auto;
         padding: 1rem;
         text-align : center;
        
     }
+
     .navlinks{
         display:none;
         color: gray;
@@ -356,9 +353,10 @@ form input.submitBtn {
         margin: 0;
         padding: 0;
     }
+
     .navlinks_show{
         color: gray;
-        display:block;
+        display: block;
         font-size: 1.5rem;
         list-style-type: none;
         margin: 0;
