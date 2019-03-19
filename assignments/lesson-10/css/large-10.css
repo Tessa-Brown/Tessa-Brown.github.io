@@ -12,8 +12,21 @@
         margin:0 auto;
         padding:0;
         max-width: 90%;
-
         }
+
+    .foreBox {
+        display:flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-self: stretch;
+        margin: .25rem;
+        padding: .5rem;
+        width: 18%;
+        background-color: #ffffff;
+        border: 1px solid #282828;
+        border-radius: .2rem;
+        font-size: 1rem;
+    }
          
     table, tr, th {
          color:black; 
