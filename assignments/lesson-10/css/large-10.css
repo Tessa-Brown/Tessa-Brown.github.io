@@ -6,16 +6,13 @@
      }
 
      .forecast {
-        display:flex;
+        display: flex;
         flex-flow: row nowrap;
-        align-items: center;
-        justify-self: stretch;
-        margin: .25rem;
-        padding: .5rem;
-        width: 18%;
-        background-color: #ffffff;
-        border-radius: .2rem;
-        font-size: 1rem;
+        justify-content: space-between;
+        margin:0 auto;
+        padding:0;
+        max-width: 90%;
+
         }
          
     table, tr, th {
