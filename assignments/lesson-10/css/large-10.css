@@ -7,14 +7,13 @@
 
      .forecast {
         display:flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         align-items: center;
         justify-self: stretch;
         margin: .25rem;
         padding: .5rem;
         width: 18%;
         background-color: #ffffff;
-        border: 1px solid #282828;
         border-radius: .2rem;
         font-size: 1rem;
         }
