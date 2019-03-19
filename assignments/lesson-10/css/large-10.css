@@ -5,7 +5,7 @@
          display: none;
      }
 
-     #forecast {
+     .forecast {
         display: flex;
         flex-flow: column nowrap;
         width: 90%;
@@ -13,22 +13,22 @@
         justify-content: center;
       }
       
-      #forecast article{
+      .forecast article{
         margin: 10px;
         text-align: center;
         width: 98%;
         height: 300px;
       }
       
-      #forecast h2{
+      .forecast h2{
         text-align: center;
       }
     
-      #forecast p{
+      .forecast p{
         font-size: 16px;
       }
     
-      #forecast img {
+      .forecast img {
         display: flex;
         align-items: center;
         width: 95%;
