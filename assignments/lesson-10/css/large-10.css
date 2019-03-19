@@ -5,28 +5,36 @@
          display: none;
      }
 
-     .forecast {
+     #forecast {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin:0 auto;
-        padding:0;
-        max-width: 90%;
-        }
-
-    .foreBox {
-        display:flex;
         flex-flow: column nowrap;
+        width: 90%;
+        margin: 1rem auto;
+        justify-content: center;
+      }
+      
+      #forecast article{
+        margin: 10px;
+        text-align: center;
+        width: 98%;
+        height: 300px;
+      }
+      
+      #forecast h2{
+        text-align: center;
+      }
+    
+      #forecast p{
+        font-size: 16px;
+      }
+    
+      #forecast img {
+        display: flex;
         align-items: center;
-        justify-self: stretch;
-        margin: .25rem;
-        padding: .5rem;
-        width: 18%;
-        background-color: #ffffff;
-        border: 1px solid #282828;
-        border-radius: .2rem;
-        font-size: 1rem;
-    }
+        width: 95%;
+        height: auto;
+        margin-top: auto;
+      }
          
     table, tr, th {
          color:black; 
