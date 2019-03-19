@@ -305,7 +305,25 @@ form input.submitBtn {
     height: auto;
     margin-top: auto;
   }
-
+  .events h2 {
+    font-size: 3rem;
+}
+  .events p {
+      font-size: 2rem;
+  }
+  .events {
+    width : 50%;
+    height: 300px;
+    font-family: 'Sarabun', 'sans-serif';
+    background-color : #BED8D4;
+    color : black;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align : center;;
+    line-height: 3px;
+    margin-left : auto;
+    margin-right : auto;
+  }
   @media screen and (max-width: 501px) { 
     .foreTitle {
         display: none;
