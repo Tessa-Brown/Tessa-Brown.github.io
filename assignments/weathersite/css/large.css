@@ -62,6 +62,7 @@ nav a {
 /*-------------- Town Trifold Styling-------------*/
 #town {
     flex-flow: row nowrap;
+    background-color: #BED8D4;
 }
 
 #town article {
@@ -69,9 +70,8 @@ nav a {
     flex-flow: column nowrap;
     align-self: stretch;
     align-items: center;
-    height: 500px;
+    height: auto;
     margin-bottom: 0;
-    background-color: #BED8D4;
 }
 
 #town img {
