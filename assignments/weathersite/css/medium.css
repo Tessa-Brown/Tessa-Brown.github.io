@@ -1,121 +1,130 @@
 /* Medium Devices (501px and up) */
 @media screen and (min-width: 501px) { 
-    .menubutton {
-         display: none;
-     }
-
-    table, tr, th {
-         color:black; 
-         border: 1px solid #f3f5e9;
-         background-color: #BED8D4;
-         margin-left: auto;                
-         margin-right: auto;
-         }
-           
-    table {
-          width: 50%;
-          margin-left: auto;
-          margin-right: auto;
-           }
-
-    .navigation {
     
-            display: inline-block;
-            text-align : center;
-            font-family: 'Sarabun', sans-serif;
-            font-size : 1rem;
-            color : #656565;
-            background: #BED8D4;
-            width: 90%;
-        }
+/*-------------- Menu Styling-------------*/
+.menubutton {
+     display: none;
+}
 
-    nav li {
-        display:inline-block;
-        background-color: #BED8D4;
-        font-size: 25px;
-        
-    }
+.navigation {
+    display: inline-block;
+    text-align : center;
+    font-family: 'Sarabun', sans-serif;
+    font-size : 1rem;
+    color : #656565;
+    background: #BED8D4;
+    width: 90%;
+}
 
-    nav a {
-        display: inline-block;
-        padding: .5rem;
-        color: #656565;
-        background: #BED8D4;
-        text-decoration: none;
-        }
+nav li {
+    display:inline-block;
+    background-color: #BED8D4;
+    font-size: 25px;  
+}
 
-    .navlinks{
-            display: block;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+nav a {
+    display: inline-block;
+    padding: .5rem;
+    color: #656565;
+    background: #BED8D4;
+    text-decoration: none;
+}
 
-    .navlinks_show{
-            display: block;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+.navlinks {
+    display: block;
+    list-style-type: none;
+    margin: 0;            
+    padding: 0;
+}
 
-        .wrapper {
-            margin: 0 .5rem .5rem .5rem;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 1rem;
-        }
-        .foreTitle {
-            text-align: center;
-            margin: 1rem;
-        }
-        .forecast {
-            display: grid;
-            grid-template-columns: repeat(5, 2fr);
-           width: 80%;
-           height: auto;
-           margin: 1rem auto;
-           justify-content: center;
-         }
+.navlinks_show {
+    display: block;          
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------- Gallery Styling -------------*/
+.wrapper {
+    margin: 0 .5rem .5rem .5rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+}
+
+/*-------------- Fiveday Forecast Styling -------------*/
+.foreTitle {
+    text-align: center;
+    margin: 1rem;
+}
+
+.forecast {
+    background-color: #BED8D4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    height: auto; 
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
          
-         .forecast article{
-           display: flex;
-           flex-flow: column nowrap;
-           margin: 10px;
-           text-align: center;
-           width: 80%;
-           height: auto;
-   
-         }
+.forecast article {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+}
          
-         .forecast h2{
-           text-align: center;
-           font-size: 20px;
-         }
+.forecast h2 {
+    text-align: center;
+    font-size: 20px;
+}
        
-         .forecast p {
-           font-size: 16px;
-           text-align: center;
-         }
+.forecast p {
+    font-size: 16px;
+    text-align: center;
+}
        
-         .forecast img {
-           
-           width: 80%;
-           height: auto;
-         
-         }
+.forecast img {
+    width: 70%;
+    height: auto;
+}
 
-         .summary {
-            width: 200px;
-            height: 200px;
-          
-        }
+/*-------------- Summary Styling -------------*/
+.summary {
+    width: 200px;
+    height: 200px; 
+}
+
+.summary h2 {
+    font-size: 2rem;
+}
         
-        .summary p {
-            font-size: .5rem;
-        }
+.summary p {
+    font-size: .5rem;
+}
         
-        .summary h2 {
-            font-size: 2rem;
-        }
-    }
+/*-------------- Article Styling -------------*/
+.getOutside, .prestonArt, .fishArt, .sodaArt {
+    text-align: center;
+}
+
+.getOutside h3 {
+    font-size: 1.5rem;
+    color: #3C6E71;
+}
+
+.getOutside img {
+    width: 30%;
+    height: auto;
+}
+
+.prestonArt img, .fishArt img, .sodaArt img {
+    width: 60%;
+    height: auto;
+}
+        
+}

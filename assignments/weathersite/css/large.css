@@ -1,99 +1,126 @@
-
 /* Large devices (laptops/desktops, 961px and up) */
  @media screen and (min-width: 961px) { 
-     .menubutton {
-         display: none;
-     }
-     
-         
-    table, tr, th {
-         color:black; 
-         border: 1px solid #f3f5e9;
-         background-color: #BED8D4;
-         margin-left: auto;                
-         margin-right: auto;
-         }
-           
-    table {
-          width: 50%;
-          margin-left: auto;
-          margin-right: auto;
-           }
 
-    .navigation {
+/*-------------- Menu Styling-------------*/
+.menubutton {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Sarabun', sans-serif;
+    font-size : 1rem;
+    color: #656565;
+    background: #BED8D4;
+    width: 90%;
+}
+
+nav li {
+    display:inline-block;
+    background-color: #BED8D4;
+    font-size: 25px;  
+}
+
+nav a {
+    display: flex;
+    padding: .5rem;
+    color: #656565;
+    background: #BED8D4;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navlinks{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks_show{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------- Gallery Styling-------------*/
+.wrapper {
+    margin: 0 .5rem .5rem .5rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper figure:hover {
+    box-shadow: 0 .5rem 1rem #666666;
+}
+
+/*-------------- Town Trifold Styling-------------*/
+#town {
+    flex-flow: row nowrap;
+}
+
+#town article {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    align-items: center;
+    max-height: 100%;
+    margin-bottom: 0;
+}
+
+#town img {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-top: auto;
+}
+
+/*-------------- Article Styling-------------*/
+.getOutside {
+    text-align: left;
+}
+
+.getOutside img {
+    float: right;
+    margin-top: -500px;
+    margin-right: 60px;
+    width: 30%;
+    height: auto;
+ }
     
-            display: flex;
-            justify-content: space-evenly;
-            font-family: 'Sarabun', sans-serif;
-            font-size : 1rem;
-            color : #656565;
-            background: #BED8D4;
-            width: 90%;
-        }
+.prestonArt img {
+    float: right;
+    margin-top: -500px;
+    margin-right: 20px;
+    width: 40%;
+    height: auto;
+}
 
-    nav li {
-        display:inline-block;
-        background-color: #BED8D4;
-        font-size: 25px;
-        
-    }
+.fishArt img {
+    float: right;
+    margin-top: -800px;
+    margin-right: 20px;
+    width: 40%;
+    height: auto;
+}
 
-    nav a {
-        display: flex;
-        padding: .5rem;
-        color: #656565;
-        background: #BED8D4;
-        text-decoration: none;
-        list-style-type: none;
-        }
+.sodaArt img {
+    float: right;
+    margin-top: -700px;
+    margin-right: 20px;
+    width: 40%;
+    height: auto;
+}
 
-    .navlinks{
-        
-            text-decoration: none;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-    .navlinks_show{
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
- .wrapper {
-            margin: 0 .5rem .5rem .5rem;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-    .wrapper figure:hover {
-        box-shadow: 0 .5rem 1rem #666666;
-    }
-
-    #town {
-        flex-flow: row nowrap;
-      }
-
-      #town article {
-        width: 100%;
-        flex-flow: column nowrap;
-        align-self: stretch;
-        align-items: center;
-        max-height: 100%;
-        margin-bottom: 0;
-      }
-
-      #town img {
-        display: flex;
-        align-items: center;
-        width: 95%;
-        height: auto;
-        margin-top: auto;
-      }
+.prestonArt p, .sodaArt p, .fishArt p {
+    width: 55%;
+    text-align: justify;
+}
 
 }
