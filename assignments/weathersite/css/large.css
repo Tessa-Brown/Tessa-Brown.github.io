@@ -71,14 +71,14 @@ nav a {
     align-items: center;
     max-height: 100%;
     margin-bottom: 0;
+    background-color: #656565;
 }
 
 #town img {
     display: flex;
     align-items: center;
-    width: 95%;
-    height: auto;
-    margin-top: auto;
+    width: auto;
+    height: 70%;
 }
 
 /*-------------- Article Styling-------------*/
@@ -96,9 +96,9 @@ nav a {
     
 .prestonArt img {
     float: right;
-    margin-top: -500px;
+    margin-top: -450px;
     margin-right: 20px;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -114,7 +114,7 @@ nav a {
     float: right;
     margin-top: -700px;
     margin-right: 20px;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
