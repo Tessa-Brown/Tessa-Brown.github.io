@@ -297,7 +297,7 @@ form input.submitBtn {
 #town img {
     display: flex;
     align-items: center;
-    height: 50%;
+    height: 20%;
     width: auto;
 }
 
