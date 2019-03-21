@@ -297,8 +297,8 @@ form input.submitBtn {
 #town img {
     display: flex;
     align-items: center;
-    width: 50%;
-    height: auto;
+    height: 50%;
+    width: auto;
 }
 
 /*-------------- Town Events Styling -------------*/
@@ -312,13 +312,13 @@ form input.submitBtn {
 }
 
 .events {
-    width : 50%;
-    height: 300px;
+    width : 80%;
+    height: auto;
     font-family: 'Sarabun', 'sans-serif';
     background-color : #BED8D4;
     color : black;
     margin: 1rem auto;
-    padding: 30px auto;
+    padding: 50px auto;
     text-align : center;;
     line-height: 3px;
     margin-left : auto;
