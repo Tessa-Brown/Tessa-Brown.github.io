@@ -66,11 +66,11 @@ nav a {
 }
 
 #town article {
-    width: 110%;
+    width: 100%;
     flex-flow: column nowrap;
     align-self: stretch;
     align-items: center;
-    height: auto;
+    height: 400px;
     margin-bottom: 0;
 }
 
