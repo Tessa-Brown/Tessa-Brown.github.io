@@ -297,8 +297,8 @@ form input.submitBtn {
 #town img {
     display: flex;
     align-items: center;
-    height: 20%;
-    width: auto;
+    width: 20%;
+    height: auto;
 }
 
 /*-------------- Town Events Styling -------------*/
