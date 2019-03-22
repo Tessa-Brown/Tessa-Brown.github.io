@@ -66,7 +66,7 @@ nav a {
 }
 
 #town article {
-    width: 100%;
+    width: 110%;
     flex-flow: column nowrap;
     align-self: stretch;
     align-items: center;
