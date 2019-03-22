@@ -418,7 +418,8 @@ form input.submitBtn {
   }
 
   .prestonArt li, .fishArt li, .sodaArt li{
-    line-height: 10px;
+    line-height: 20px;
+    text-align: left;
 }
     
 }
