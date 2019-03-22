@@ -413,8 +413,12 @@ form input.submitBtn {
     height: auto;
   }
 
-  .prestonArt, .fishArt h2, .sodaArt h2{
+  .prestonArt h2, .fishArt h2, .sodaArt h2{
       line-height: 25px;
   }
+
+  .prestonArt li, .fishArt li, .sodaArt li{
+    line-height: 10px;
+}
     
 }

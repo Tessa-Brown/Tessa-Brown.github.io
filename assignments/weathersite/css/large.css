@@ -126,6 +126,7 @@ nav a {
 .prestonArt li, .sodaArt li, .fishArt li {
     width: 55%;
     text-align: justify;
+    line-height: 10px;
 }
 
 }
