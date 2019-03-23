@@ -12,32 +12,32 @@ h1 {
 }
 
 h2 {
-    margin-top:0rem;
+    margin-top: 0rem;
     color: #3C6E71;
     font-size: 30px;
     font-family: 'Sarabun', 'sans-serif';
 }
 
 .motto {
-    font-size : 15px;
-    color : white;
-    text-align : center;
+    font-size: 15px;
+    color: white;
+    text-align: center;
     padding: 0rem;
-    margin-left : auto;
-    margin-right : auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     display: flex;
     justify-content: center;
     background-color: #3C6E71;
-    color : white;
+    color: white;
 	border: 1px solid #bbb;
     text-align: center;
     line-height: 8px;  
     font-family: 'Sarabun', sans-serif;
-    margin-left : auto;
-    margin-right : auto;  
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 header img, .headings {
@@ -156,20 +156,22 @@ ul {
 .contact {
     font-family: 'Sarabun', 'sans-serif';
     width : 95%;
-    height: 250px;
+    height: auto;
     background-color : #BED8D4;
     color : black;
     margin: .5rem auto;
     padding: 1rem;
     text-align : left;
-    line-height: 3px;
+    line-height: 5px;
 }
+
 
 .contact img {
     display: block;
     float: right;
-    height: 90%;
-    margin-top: -150px;
+    height: 200px;
+    width: auto;
+    margin-top: -196px;
 }
 
 /*-------------- Footer Styling -------------*/
@@ -184,6 +186,7 @@ footer {
     line-height: 3px;
     text-align: center;
 }
+
 
 /*-------------- Gallery Styling -------------*/
 .gallery {
@@ -326,6 +329,7 @@ form input.submitBtn {
     margin-right : auto;
 }
 
+/*----------- Small Devices (501px and down ----------*/
 @media screen and (max-width: 501px) { 
 
 /*-------------- Fiveday Forecast Styling -------------*/
@@ -353,7 +357,7 @@ form input.submitBtn {
 }
 
 .navlinks {
-    display:none;
+    display: none;
     color: gray;
     list-style-type: none;
     margin: 0;
@@ -413,11 +417,11 @@ form input.submitBtn {
     height: auto;
   }
 
-  .prestonArt h2, .fishArt h2, .sodaArt h2{
+.prestonArt h2, .fishArt h2, .sodaArt h2{
       line-height: 25px;
   }
 
-  .prestonArt li, .fishArt li, .sodaArt li{
+.prestonArt li, .fishArt li, .sodaArt li{
     line-height: 20px;
     text-align: left;
 }

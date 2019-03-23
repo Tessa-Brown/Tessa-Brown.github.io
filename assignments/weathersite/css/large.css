@@ -2,55 +2,13 @@
  @media screen and (min-width: 961px) { 
 
 /*-------------- Menu Styling-------------*/
-.menubutton {
-    display: none;
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Sarabun', sans-serif;
-    font-size : 1rem;
-    color: #656565;
-    background: #BED8D4;
-    width: 90%;
-}
 
 nav li {
-    display:inline-block;
-    background-color: #BED8D4;
     font-size: 25px;  
-}
-
-nav a {
-    display: flex;
-    padding: .5rem;
-    color: #656565;
-    background: #BED8D4;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.navlinks{
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navlinks_show{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 /*-------------- Gallery Styling-------------*/
 .wrapper {
-    margin: 0 .5rem .5rem .5rem;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
