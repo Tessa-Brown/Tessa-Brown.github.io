@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name = "description" content = "Temple Inn and Suites">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather Weekly | Fish Haven, Preston, & Soda Springs Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+ 
+</head>
+
+<body>
+    <header>
+        <img src="images/weather.png" alt="Sun and Clouds Clipart">
+       <section class=headings>
+         <h1>Temple&nbsp;Inn&nbsp;&&nbsp;Suites</h1>
+        <div class="motto">
+             <h3><em>Getting&nbsp;You&nbsp;Closer&nbsp;to&nbsp;Where&nbsp;You&nbsp;Need&nbsp;to&nbsp;Be</em></h3>
+        </div>
+        </section>
+     </header>
+
+     <nav>
+            <div class="menubutton">
+                <a onclick="toggleNav()">&#9776; Menu</a>
+            </div>
+            <ul id="navigation" class="navlinks">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+    
+     <main>
+        <section class="title">
+            <h1>Home Page</h1>
+        </section>
+
+        
+        <article class="temple">
+            <img src="images/meridian.jpg" alt="Meridian, Idaho Temple">
+            <h3>The Meridian, Idaho Temple</h3>
+            <p><em>Dedicated in 2017</em></p>
+        </article>
+
+        <h2><a href="reservation.html">Book Your Reservation Today!</a></h2>
+
+        <img id="temple1" src="images/boise.jpg" alt="Meridian, Idaho Temple">
+        <img id="temple2" src="images/japan.jpg" alt="Meridian, Idaho Temple">
+
+        <article class="participation">
+            <h3>Temple Services</h3>
+            <p>All about Temples</p>
+        </article>
+
+        <img id="temple3" src="images/washington-dc.jpg" alt="Meridian, Idaho Temple">
+        <img id="temple4" src="images/portland.jpg" alt="Meridian, Idaho Temple">
+
+        <section class="contact">
+            <h3>Temple Inn & Suites</h3>
+            <p>1234 Weather Drive</p>
+            <p>Small Town, Idaho</p>
+            <br>
+            <p>Phone: 555-555-5555</p>
+            <p>Email: info@weatherweekly.com</p>
+            <br>
+            <p>Social: <a href="https://www.facebook.com">Facebook</a></p>
+            <img src="images/map.jpg" alt="Map of town"> 
+        </section>
+
+        <footer>
+           <p>&copy;2019 Temple Inn & Suites | Tessa Brown</p>
+           <div><span id="date"></span></div>
+           
+        </footer> 
+    </main>
+      
+<script>getDay();</script>
+
+</body>
+
+</html>

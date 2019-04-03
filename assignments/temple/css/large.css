@@ -1,0 +1,56 @@
+/* Large devices (laptops/desktops, 961px and up) */
+ @media screen and (min-width: 961px) { 
+
+/*-------------- Menu Styling-------------*/
+
+nav li {
+    font-size: 25px;  
+}
+
+/*-------------- Gallery Styling-------------*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper figure:hover {
+    box-shadow: 0 .5rem 1rem #666666;
+}
+
+/*-------------- Town Trifold Styling-------------*/
+#town {
+    flex-flow: row nowrap;
+    background-color: #BED8D4;
+}
+
+#town article {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 0;
+}
+
+#town img {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+/*-------------- Article Styling-------------*/
+
+ .temple img {
+     width: 50%;
+     height: auto;
+ }
+    
+ #temple1, #temple2, #temple3, #temple4 {
+    width: 30%; 
+    height: auto;
+  }
+
+
+  
+}

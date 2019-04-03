@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name = "description" content = "Storm Center">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather Weekly Website | Storm Center Form </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/weather.png" alt="Sun and Clouds Clipart">
+            <section class=headings>
+                <h1>Temple&nbsp;Inn&nbsp;&&nbsp;Suites</h1>
+            <div class="motto">  
+        <h3><em>Getting&nbsp;You&nbsp;Closer&nbsp;to&nbsp;Where&nbsp;You&nbsp;Need&nbsp;to&nbsp;Be</em></h3>
+             </div>
+             </section>
+    </header>
+
+     <nav>
+        <div class="menubutton">
+            <a onclick="toggleNav()">&#9776; Menu</a>
+        </div>
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a class="active" href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </nav>
+    
+    
+     <main>
+        <section class="title">
+            <h1>Make a Reservation</h1>
+        </section>
+<form method="get" action="thanks.html">
+
+    <fieldset>
+        <legend></legend>
+        <h2>Information About Your Trip!</h2>
+        <label class="top">Location<input type="text" name="location" required></label>
+        <label class="top">Date of Stay:<input type="date" name="date"></label>
+        <label class="top">Number of Rooms:<input type="number" name="rooms" required></label>
+           
+        <label class="sbs">Handicap Accessible?</label>
+            <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+            <label class="sbs"><input type="radio" name="danger" value="no">No</label>        
+        <label class="top">Type of Room(s):<input type="text" name="type" list="roomTypes" required>
+        <datalist id="roomTypes">
+                <option value="Double Twin"></option>
+                <option value="Single Queen"></option>
+                <option value="Double Queen"></option>
+                <option value="Single King"></option>
+                <option value="Double King"></option>
+            </datalist></label>
+    </fieldset>
+
+    <fieldset>
+        <legend></legend>
+        <h2>Personal Information</h2>
+        <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+        <label class="top">Email<input type="email" name="email" placeholder="me@gmail.com"></label>
+        <label class="top">Phone Number*<input type="tel" name="telephone" placeholder="1235556789" required></label>
+        <label class="top">Home State or Country<input type="text" name="home"></label>
+    </fieldset>
+
+    <fieldset>
+        <label class="top">Special Accommodations or Comments: <em>(Drag bottom corner to expand)</em><br>
+        <textarea name="comments"></textarea> </label>
+        <input type="submit" name="submitStormData" value="Submit Reservation Info" class="submitBtn"><br>
+    </fieldset>
+
+</form>
+        
+<section class="contact">
+    <h3>Weather Weekly</h3>
+    <p>1234 Weather Drive</p>
+    <p>Small Town, Idaho</p>
+    <br>
+    <p>Phone: 555-555-5555</p>
+    <p>Email: info@weatherweekly.com</p>
+    <br>
+    <p>Social: <a href="https://www.facebook.com">Facebook</a></p>
+    <img src="images/map.jpg" alt="Map of town"> 
+</section>
+
+<footer>
+   <p>&copy;2019 Weather Weekly | Tessa Brown</p>
+   <div><span id="date"></span></div>
+</footer> 
+</main>
+
+<script>getDay();</script>
+
+</body>
+
+</html>

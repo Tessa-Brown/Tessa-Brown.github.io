@@ -1,0 +1,122 @@
+/* Medium Devices (501px and up) */
+@media screen and (min-width: 501px) { 
+    
+/*-------------- Menu Styling-------------*/
+.menubutton {
+     display: none;
+}
+
+.navigation {
+    display: inline-block;
+    text-align : center;
+    font-family: 'Montserrat', sans-serif;
+    color : white ;
+    width: 90%;
+}
+
+nav li {
+    display:inline-block;
+    font-size: 20px;  
+}
+
+nav a {
+    display: inline-block;
+    padding: .5rem;
+    color: white;
+}
+
+.navlinks_show {
+    display: block;          
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------- Gallery Styling -------------*/
+.wrapper {
+    margin: 0 .5rem .5rem .5rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+}
+
+/*-------------- Fiveday Forecast Styling -------------*/
+.foreTitle {
+    text-align: center;
+    margin: 1rem;
+}
+
+.forecast {
+    background-color: #BED8D4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    height: auto; 
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
+         
+.forecast article {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+}
+         
+.forecast h2 {
+    text-align: center;
+    font-size: 20px;
+}
+       
+.forecast p {
+    font-size: 16px;
+    text-align: center;
+}
+       
+.forecast img {
+    width: 70%;
+    height: auto;
+}
+
+/*-------------- Summary Styling -------------*/
+.summary {
+    width: 200px;
+    height: 200px; 
+}
+
+.summary h2 {
+    font-size: 2rem;
+}
+        
+.summary p {
+    font-size: .5rem;
+}
+        
+/*-------------- Article Styling -------------*/
+.getOutside, .prestonArt, .fishArt, .sodaArt {
+    text-align: center;
+}
+
+.getOutside h3 {
+    font-size: 1.5rem;
+    color: #3C6E71;
+}
+
+.getOutside img {
+    width: 30%;
+    height: auto;
+}
+
+.prestonArt img, .fishArt img, .sodaArt img {
+    width: 60%;
+    height: auto;
+}
+
+.prestonArt li, .fishArt li, .sodaArt li{
+    line-height: 20px;
+    text-align: left;
+}
+        
+}
