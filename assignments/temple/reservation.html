@@ -49,14 +49,80 @@
     <fieldset>
         <legend></legend>
         <h2>Information About Your Trip!</h2>
-        <label class="top">Location<input type="text" name="location" required></label>
-        <label class="top">Date of Stay:<input type="date" name="date"></label>
-        <label class="top">Number of Rooms:<input type="number" name="rooms" required></label>
+        <label class="top">Location:*<input type="text" name="location" list="locations" required>
+            <datalist id="locations">
+                    <option value="Albuquerque, New Mexico"></option>
+                    <option value="Anchorage, Alaska"></option>
+                    <option value="Atlanta, Georgia"></option>
+                    <option value="Baton Rouge, Louisiana"></option>
+                    <option value="Billings, Montana"></option>
+                    <option value="Birmingham, Alabama"></option>
+                    <option value="Bismarck, North Dakota"></option>
+                    <option value="Boise, Idaho"></option>
+                    <option value="Boston, Massachusetts"></option>
+                    <option value="Chicago, Illinois"></option>
+                    <option value="Columbia River, Washington"></option>
+                    <option value="Columbia, South Carolina"></option>
+                    <option value="Columbus, Ohio"></option>
+                    <option value="Dallas, Texas"></option>
+                    <option value="Denver, Colorado"></option>
+                    <option value="Detroit, Michigan"></option>
+                    <option value="Fort Collins, Colorado"></option>
+                    <option value="Fort Lauderdale, Florida"></option>
+                    <option value="Fresno, California"></option>
+                    <option value="Gilbert, Arizona"></option>
+                    <option value="Hartford, Connecticut"></option>
+                    <option value="Houston, Texas"></option>
+                    <option value="Idaho Falls, Idaho"></option>
+                    <option value="Indianapolis, Indiana"></option>
+                    <option value="Kansas City, Missouri"></option>
+                    <option value="Kona, Hawaii"></option>
+                    <option value="Laie, Hawaii"></option>
+                    <option value="Las Vegas, Nevada"></option>
+                    <option value="Los Angeles, California"></option>
+                    <option value="Louisville, Kentucky"></option>
+                    <option value="Lubbock, Texas"></option>
+                    <option value="Manhattan, New York"></option>
+                    <option value="Medford, Oregon"></option>
+                    <option value="Memphis, Tennessee"></option>
+                    <option value="Meridian, Idaho"></option>
+                    <option value="Mesa, Arizona"></option>
+                    <option value="Nashville, Tennessee"></option>
+                    <option value="Nauvoo, Illinois"></option>
+                    <option value="Newport Beach, California"></option>
+                    <option value="Oakland, California"></option>
+                    <option value="Oklahoma City, Oklahoma"></option>
+                    <option value="Orlando, Florida"></option>
+                    <option value="Palmyra, New York"></option>
+                    <option value="Philadelphia, Pennsylvania"></option>
+                    <option value="Phoenix, Arizona"></option>
+                    <option value="Portland, Oregon"></option>
+                    <option value="Raleigh, North Carolina"></option>
+                    <option value="Redlands, California"></option>
+                    <option value="Reno, Nevada"></option>
+                    <option value="Rexburg, Idaho"></option>
+                    <option value="Sacramento, California"></option>
+                    <option value="Salt Lake City, Utah"></option>
+                    <option value="San Antonio, Texas"></option>
+                    <option value="San Diego, California"></option>
+                    <option value="Seattle, Washington"></option>
+                    <option value="Snowflake, Arizona"></option>
+                    <option value="Spokane, Washington"></option>
+                    <option value="St. Louis, Missouri"></option>
+                    <option value="St. Paul, Minnesota"></option>
+                    <option value="Star Valley, Wyoming"></option>
+                    <option value="Tuscon, Arizona"></option>
+                    <option value="Twin Falls, Idaho"></option>
+                    <option value="Washington DC, Maryland"></option>
+                    <option value="Winter Quarters, Nebraska"></option>
+                </datalist></label>
+        <label class="top">Date of Stay:*<input type="date" name="date" required></label>
+        <label class="top">Number of Rooms:*<input type="number" name="rooms" required></label>
            
         <label class="sbs">Handicap Accessible?</label>
             <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
             <label class="sbs"><input type="radio" name="danger" value="no">No</label>        
-        <label class="top">Type of Room(s):<input type="text" name="type" list="roomTypes" required>
+        <label class="top">Type of Room(s):*<input type="text" name="type" list="roomTypes" required>
         <datalist id="roomTypes">
                 <option value="Double Twin"></option>
                 <option value="Single Queen"></option>
@@ -70,7 +136,7 @@
         <legend></legend>
         <h2>Personal Information</h2>
         <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
-        <label class="top">Email<input type="email" name="email" placeholder="me@gmail.com"></label>
+        <label class="top">Email*<input type="email" name="email" placeholder="me@gmail.com" required></label>
         <label class="top">Phone Number*<input type="tel" name="telephone" placeholder="1235556789" required></label>
         <label class="top">Home State or Country<input type="text" name="home"></label>
     </fieldset>
