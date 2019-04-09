@@ -1,5 +1,5 @@
     function templeData() { 
-        var section = document.querySelector('.templeData');
+        var section = document.querySelector('#templeData');
         var requestURL = 'https://tessa-brown.github.io/temples.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
