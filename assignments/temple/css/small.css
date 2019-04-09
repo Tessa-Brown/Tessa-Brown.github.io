@@ -1,7 +1,7 @@
 /*-------------- Header  Styling -------------*/
 header, nav, main, footer {
-    margin: .5rem;
-    padding: .25rem;  
+    margin: .2rem;
+    padding: .2rem;  
 }
 
 h1 {
@@ -43,6 +43,19 @@ header img, .headings {
     height: 100px; 
     width: auto;
     padding: .5rem;
+}
+
+.hero{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.participation{
+    background-color: #7a1616;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*-------------- Navigation  Styling -------------*/
@@ -92,61 +105,6 @@ ul {
     line-height: 8px;  
     font-family: 'Montserrat', sans-serif;
     color : #7a1616;
-}
-
-/*-------------- Hero and Summary  Styling -------------*/
-.hero {
-    display:flex;
-    flex-flow: row nowrap;
-    padding: 0;
-    margin: 0 .5rem 0 .5rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-
-.summary li {
-    line-height: 1.5rem;
-    padding: 2rem auto;
-}
-
-.summary {
-    float: left;
-    position: absolute;
-    margin-left: 5rem;
-    margin-top: 1rem;
-    padding: .5rem; 
-    background-color : rgba(255, 255, 255, 0.714);
-    text-align : center;
-    font-family: 'Montserrat', 'sans-serif';
-}
-
-/*-------------- Article  Styling -------------*/
-.getOutside, .fishArt, .sodaArt, .prestonArt {
-    background-color : #BED8D4;
-    color : black;
-    margin: 1rem auto;
-    padding: 20px;
-    padding-top: 10px;
-    margin-left : auto;
-    margin-right : auto;
-    font-family: 'Montserrat', 'sans-serif';
-}
-
-.getOutside h3 {
-    font-size: 1.5rem;
-    color: #3C6E71;
-}
-
-#att {
-    font-size: 12px;
 }
 
 /*-------------- Contact  Styling -------------*/
@@ -251,7 +209,7 @@ form label.top input, form label.top select {
 
 form label.sbs {
     display: block;
-    padding: .75rem, 0;
+    padding: .75rem;
     width: 100%;
     max-width: 20rem;
 }
@@ -269,89 +227,31 @@ form input.submitBtn {
     font-size: 1.5rem;
 }
 
-/*-------------- Town Trifold Styling -------------*/
-#town {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 90%;
-    margin: 1rem auto;
-    justify-content: center;
-    background-color: #BED8D4;
-}
-  
-#town article {
-    margin: 10px;
-    text-align: center;
-    width: 98%;
+.temple img {
+    width: 100%;
     height: auto;
-}
-  
-#town h2 {
-    text-align: center;
-}
+  }
 
-#town p {
-    font-size: 16px;
-}
-
-#town img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: auto;
-}
-
-/*-------------- Town Events Styling -------------*/
-.events h2 {
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-.events p {
-      font-size: 2rem;
-}
-
-.events {
-    width : 80%;
-    height: auto;
-    font-family: 'Montserrat', 'sans-serif';
-    background-color : #BED8D4;
-    color : black;
-    margin: 1rem auto;
-    padding: 50px auto;
-    text-align : center;;
-    line-height: 3px;
-    margin-left : auto;
-    margin-right : auto;
-}
+  .res {
+      text-align: center;
+  }
 
 /*----------- Small Devices (501px and down ----------*/
-@media screen and (max-width: 501px) { 
-
-/*-------------- Fiveday Forecast Styling -------------*/
-.foreTitle {
-    display: none;
-}
-
-.forecast {
-    display : none;
-}
+@media screen and (max-width: 501px) {
 
 /*-------------- Navigation Styling -------------*/
 .navigation {
     display: none;
 }
-
-.menubutton {
-    display : block;
-    font-size : 30px;
-
-    color: white;
-    margin: 0rem auto;
-    padding: 1rem;
-    text-align : center;
-}
+    .menubutton {
+        display : block;
+        font-size : 30px;
+        background-color : #BED8D4;
+        color : #656565;
+        margin: 0rem auto;
+        padding: 1rem;
+        text-align : center;
+    }
 
 .navlinks {
     display: none;
@@ -370,6 +270,10 @@ form input.submitBtn {
     padding: 0;
 } 
     
+
+.hero{
+    text-align: center;
+}
 /*-------------- Gallery Styling -------------*/
 .wrapper {
     margin: 0 .5rem .5rem .5rem;
@@ -379,34 +283,25 @@ form input.submitBtn {
     grid-row-gap: 1rem;
 }
 
-/*-------------- Summary Styling -------------*/
-.summary {
-    width: 200px;
-    height: 200px;
-    margin: 0rem;
-    margin-left: 1rem;
-    padding: 0rem;
+.templeAct{
+    display: none;
 }
 
-.summary p {
-    font-size: .25rem;
-}
-   
-.summary h2 {
-    font-size: .5rem;
+.templeActTwo{
+    display: none;
 }
 
-/*-------------- Article Styling -------------*/
-.temple img {
-    height: 20%;
-    width: auto;
-    float: left;
-  }
-   
-#temple1, #temple2, #temple3, #temple4 {
-   width: 30%;
-   height: auto;
-  }
+.smallTemp img{
+    width: 100%;
+    height: auto;
+}
 
-    
+.res {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.participation{
+    text-align: center;
+}   
 }
