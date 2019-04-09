@@ -1,6 +1,6 @@
     function templeData() { 
         var section = document.querySelector('#temples');
-        var requestURL = 'scripts/temples.json';
+        var requestURL = 'https://github.com/Tessa-Brown/Tessa-Brown.github.io/blob/master/temples.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
