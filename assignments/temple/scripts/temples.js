@@ -32,7 +32,7 @@
             history.textContent = temples[i].history;
             services.textContent = temples[i].services;
             ordinances.textContent = temples[i].ordinances;
-            closures.textContent = temples[i].closures;
+            closure.textContent = temples[i].closures;
             
             for(var n=0; n < history.length; n++){
                 var event = document.createElement('li');
