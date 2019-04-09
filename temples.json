@@ -1,33 +1,7 @@
 {
   "temples" : [
   {
-    "name": "Billings, Montana",
-    "address" : "3100 Rim Point Dr., Billings, MT 59106",
-    "telephone": "(1) 406-655-0607",
-
-    "history" : [
-      "Announced: 30 August 1996",
-      "Groundbreaking: 28 March 1998",
-      "Dedicated: 20 November 1999"
-    ],
-
-     "services" : [
-     "Clothing rental available",       
-     "No cafeteria available",
-     "No patron housing available",
-     "Distribution center nearby"
-    ],
-
-    "ordinances" : [
-      "The Temple is open every Tuesday-Saturday, except for noted closure dates.",  
-      "Baptisms: 6:30am - 9:00pm Walk-ins & Appointments",
-      "Initiatories: 6:30am - 9:00pm Walk-ins Only",
-      "Endowment: 7am-7pm Walk-ins & Appointments",
-      "Sealings: 7:30am - 9:00pm Walk-ins & Appointments"
-    ],
-
      "closures" : [
-      "Monday, 6 May 2019 - Monday, 20 May 2019",
       "Thursday, 4 July 2019",
       "Saturday, 5 October 2019",
       "Monday, 4 November 2019 - Monday, 11 November 2019",
@@ -35,76 +9,6 @@
       "Thursday, 28 November 2019",
       "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
       "Tuesday, 31 December 2019 (Limited Hours)"
-    ]
-  },
- {
-    "name": "Gilbert, Arizona",
-    "address" : "3301 S Greenfield Rd, Gilbert, AZ 85297",
-    "telephone": "(1) 480-822-5000",
-
-    "history" : [
-      "Announced: 10 April 2008",
-      "Groundbreaking: 13 November 2010",
-      "Dedicated: 2 March 2014"
-    ],
-
-     "services" : [
-     "Clothing rental available",       
-     "No cafeteria available",
-     "No patron housing available",
-     "Distribution center nearby"
-    ],
-
-    "ordinances" : [
-      "The Temple is open every Tuesday-Saturday, except for noted closure dates.",  
-      "Baptisms: 5:30am - 4:00pm Walk-ins Only , 4:00pm - 8:30pm Church Groups : Walk-ins & Appointments",
-      "Initiatories: 6:30am - 9:00pm Walk-ins Only",
-      "Endowment: 5:30am-7:45pm Walk-ins Only",
-      "Sealings: For sealing information and schedule, please call the temple."
-    ],
-
-     "closures" : [
-      "Thursday, 4 July 2019",
-      "Monday, 30 September 2019",
-      "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-      "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-      "Tuesday, 31 December 2019"
-    ]
-  },
-  {
-    "name": "Medford, Oregon",
-    "address" : "3900 Grant, Central Point, OR 97502",
-    "telephone": "(1) 541-664-2050",
-
-    "history" : [
-      "Announced: 15 March 1999",
-      "Groundbreaking: 20 May 1999",
-      "Dedicated: 16 April 2000"
-    ],
-
-     "services" : [
-     "No clothing rental available",       
-     "No cafeteria available",
-     "No patron housing available",
-     "No distribution center nearby"
-    ],
-
-    "ordinances" : [
-      "The Temple is open every Tuesday-Saturday, except for noted closure dates.",  
-      "Baptisms: 6:30am - 8:30pm Walk-ins & Appointments",
-      "Initiatories: 9:45am - 12:00pm Walk-ins & Appointments",
-      "Endowment: 10:00am-7:00pm Walk-ins Only",
-      "Sealings: 9:45am - 7:45pm Walk-ins & Appointments"
-    ],
-
-     "closures" : [
-      "Thursday, 4 July 2019",
-      "Thursday, 23 July 2019 - Monday, 2 September 2019",
-      "Saturday, 5 October 2019",
-      "Wednesday, 27 November 2019 (Limited Hours)",
-      "Thursday, 28 November 2019 - Friday, 29 November 2019",
-      "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-      "Tuesday, 31 December 2019"
     ]
   }
 ]

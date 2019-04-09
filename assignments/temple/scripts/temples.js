@@ -15,45 +15,9 @@
 
             for(var i = 0; i < temples.length; i++) {
             
-            var myArticle = document.createElement('article');
-            var name = document.createElement('h2');
-            var address = document.createElement('p');
-            var telephone = document.createElement('p');
-            var history = document.createElement('ul');
-            var services = document.createElement('ul');
-            var ordinances = document.createElement('ul');
+
             var closure = document.createElement('ul');
-    
-    
-
-            name.textContent = temples[i].name;
-            address.textContent = temples[i].address;
-            telephone.textContent = temples[i].telephone;
-            history.textContent = temples[i].history;
-            services.textContent = temples[i].services;
-            ordinances.textContent = temples[i].ordinances;
             closure.textContent = temples[i].closures;
-            
-            for(var n=0; n < history.length; n++){
-                var event = document.createElement('li');
-                
-                event.textContent = history[n];
-                list.appendChild(event);
-            }
-
-            for(var n=0; n < services.length; n++){
-                var service = document.createElement('li');
-                
-                service.textContent = services[n];
-                list.appendChild(service);
-            }
-
-            for(var n=0; n < ordinances.length; n++){
-                var ordinance = document.createElement('li');
-                
-                ordinance.textContent = ordinances[n];
-                list.appendChild(ordinance);
-            }
 
             for(var n=0; n < closures.length; n++){
                 var closure = document.createElement('li');
@@ -62,14 +26,8 @@
                 list.appendChild(closure);
             }
         
-            myArticle.appendChild(name);
-            myArticle.appendChild(address);
-            myArticle.appendChild(telephone);
-            myArticle.appendChild(history);
-            myArticle.appendChild(services);
-            myArticle.appendChild(ordinances);
+            section.appendChild(closure);
     
-            section.appendChild(myArticle);
           } 
         }
     }
