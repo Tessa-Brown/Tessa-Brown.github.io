@@ -65,6 +65,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
     width: 90%;
     height: auto;
     margin:  3rem auto;
