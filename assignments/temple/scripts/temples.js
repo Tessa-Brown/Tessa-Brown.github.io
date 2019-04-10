@@ -15,17 +15,21 @@
         
             for(var i=0; i < temples.length; i++){
 
-            var closure = document.createElement('ul');
-            closure.textContent = temples[i].closures;
+                var closures = towns[i].closures;
+                var heading = document.createElement('h2');
+                var list = document.createElement('ul');
 
-            for(var n=0; n < closure.length; n++){
-                var info = document.createElement('li');
-                
-                info.textContent = closure[n];
-                list.appendChild(info);
-            }
+                heading.textContent = 'Closures';
+
+                for(var n=0; n < closures.length; n++){
+                    var date = document.createElement('li');
+                    
+                    date.textContent = closures[n];
+                    list.appendChild(date);
+                }
         
-            section.appendChild(closure);
+                section.appendChild(heading);
+                section.appendChild(list);
     
           } 
         }
