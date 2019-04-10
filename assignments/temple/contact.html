@@ -2,9 +2,9 @@
 <html lang = "en-us">
 <head>
     <meta charset="utf-8">
-    <meta name = "description" content = "Fish Haven Weather">
+    <meta name = "description" content = "Temple Inn & Suites Contact Us Page">
     <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Weather Weekly Website | Fish Haven, Idaho Weather Updates</title>
+    <title>Contact US Page | Temple Inn & Suites | Hotels Based Near LDS Temples for Easy Accommodations</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <header>
-            <img src="images/temple-logo.png" alt="Salt Lake City, Utah Temple Logo">
-             <section class=headings>
-                    <h1>Temple&nbsp;Inn&nbsp;&&nbsp;Suites</h1>
-                <div class="motto">  
-            <h3><em>Getting&nbsp;You&nbsp;Closer&nbsp;to&nbsp;Where&nbsp;You&nbsp;Need&nbsp;to&nbsp;Be</em></h3>
-                 </div>
-             </section>
-    </header>
+        <header>  
+                <img src="images/temple-logo.png" alt="Salt Lake City, Utah Temple Logo">
+               <section class=headings>
+                 <h1>Temple&nbsp;Inn&nbsp;&&nbsp;Suites</h1>
+                 <div class="motto">
+                        <h4><em>Getting&nbsp;You&nbsp;Where&nbsp;You&nbsp;Need&nbsp;to&nbsp;Be</em></h4>
+                   </div>
+                </section>
+             </header>
 
      <nav>
         <div class="menubutton">
@@ -65,20 +65,22 @@
                 <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="me@gmail.com" required></label>
                 <label class="top">Phone Number*<input type="tel" name="telephone" placeholder="1235556789" required></label>
-        </fieldset>
-
-        <fieldset>
+                <label class="top">Inquiry Regarding:</label>
+                    <label class="sbs"><input type="radio" name="danger" value="hotel">Hotel Reservation</label>
+                    <label class="sbs"><input type="radio" name="danger" value="ballroom">Ballroom Reservation</label>  
+                    <label class="sbs"><input type="radio" name="danger" value="missionary">Full-Time Temple Missionary Reservation</label> 
+                    <label class="sbs"><input type="radio" name="danger" value="other">Other</label> 
                 <label class="top">What Can We Do For You?: <em>(Drag bottom corner to expand)</em>
                 <textarea name="comments"></textarea> </label><br>
                 <input type="submit" name="submitStormData" value="Submit Inquiry Info" class="submitBtn"><br>
         </fieldset>
     </form>
 
-        <footer>
-           <p>&copy;2019 Weather Weekly | Tessa Brown</p>
-           <div><span id="date"></span></div>
-           <p>Weather information courtesy of <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
-        </footer> 
+
+                <footer>
+                        <p>&copy;2019 Temple Inn & Suites | Tessa Brown</p>
+                        <div><span id="date"></span></div>
+                     </footer> 
     </main>
       
 
