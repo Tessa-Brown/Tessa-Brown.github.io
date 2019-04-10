@@ -160,6 +160,10 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: white;
+}
+
 /*-------------- Home Page Styling -------------*/
 .res {
     text-align: center;
