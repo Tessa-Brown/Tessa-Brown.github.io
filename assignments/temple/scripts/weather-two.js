@@ -1,5 +1,5 @@
-function conditions(townid) {
-    var container = document.querySelector('.summaryFour');
+function conditionsTwo(townid) {
+    var container = document.querySelector('.summaryTwo');
     var weatherRequest = new XMLHttpRequest();
     var apiURLString = 'https://api.openweathermap.org/data/2.5/weather?id=' + townid 
                         + '&APPID=68d549a21785ffa96111f8b7a8d9287f&units=Imperial';
