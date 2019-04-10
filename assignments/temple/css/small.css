@@ -345,7 +345,9 @@ form input.submitBtn {
     font-size: 25px;
 }
 
+/*-------------- Contact Page Styling -------------*/
 .conInfo{
+    text-align: center;
     font-size: 25px;
 }
 
@@ -438,10 +440,5 @@ form input.submitBtn {
 
 .receptionInfo {
    text-align: center;
-}
-
-/*-------------- Reception Page Styling for Small View -------------*/
-.conInfo{
-    text-align: center;
 }
 }
