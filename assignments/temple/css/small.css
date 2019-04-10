@@ -135,12 +135,16 @@ nav a:hover {
 .contact {
     width : 95%;
     height: auto;
-    background-color : #6F6262;
-    color : black;
+    background-color : #453B3B;
+    color : white;
     margin: .5rem auto;
     padding: 1rem;
     text-align : left;
     line-height: 5px;
+}
+
+.contact h3{
+    color:white;
 }
 
 /*-------------- Footer Styling -------------*/
