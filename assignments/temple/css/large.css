@@ -1,28 +1,35 @@
 /* Large devices (laptops/desktops, 961px and up) */
  @media screen and (min-width: 961px) { 
 
-/*-------------- Menu Styling-------------*/
-
+/*-------------- Navigation Styling for Large View -------------*/
 nav li {
     font-size: 25px;  
+}
+
+/*-------------- Home Page Styling for Large View -------------*/
+.hero {
+    float: right;
+    width: 54%;
+}
+
+.temple img {
+    width: 45%;
+    height: auto;
 }
 
 .templeAct, .templeActTwo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1fr;
+    grid-row-gap: 1rem;
     width: 80%;
     height: auto;
 }
 
-.hotelImg {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1fr;
-    width: 90%;
-    height: auto;
+.smallTemp {
+    display: none;
 }
 
+/*-------------- Temple Page Styling for Large View -------------*/
 #templeInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,22 +38,7 @@ nav li {
 
 }
 
-/*-------------- Article Styling-------------*/
-
- .temple img {
-     width: 45%;
-     height: auto;
- }
-
- .hero {
-     float: right;
-     width: 54%;
- }
-
-.smallTemp {
-    display: none;
-}
-
+/*-------------- Services Page Styling for Large View -------------*/
 .service h2 {
     text-align: left;
  }
@@ -54,5 +46,13 @@ nav li {
 .service li {
    text-align: left;
 }
-  
+
+/*-------------- Missionary Suite Page Styling for Large View -------------*/
+.hotelImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    width: 90%;
+    height: auto;
+}  
 }

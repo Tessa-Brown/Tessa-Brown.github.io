@@ -1,8 +1,9 @@
+/*-------------- All Font Styling -------------*/
 * {
     font-family: 'Montserrat', 'sans-serif';
  }
 
-/*-------------- Header  Styling -------------*/
+/*-------------- Header & Main Page Styling -------------*/
 header, nav, main, footer {
     margin: .2rem;
     padding: .2rem;  
@@ -35,7 +36,6 @@ h5 {
     font-size: 18px;
 }
 
-
 ul {
     list-style-type : none;
     text-decoration: none;
@@ -45,7 +45,6 @@ ul {
 }
 
 a {
-    
     color: #7a1616;
 }
 
@@ -83,35 +82,12 @@ header {
     color: white;
 }
 
-
 header img {
     height: 80px;
     width: auto;
     margin-top: .5rem;
-    padding: 2rem auto;
+    padding: 2rem;
 }
-
-.missHero li, .missHeroTwo li{
-    line-height: 30px;
-}
-
-.participation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #7a1616;
-    color: white;
-    width: 80%;
-    height: auto;
-    padding: 1rem;
-    line-height: 20px;
-    text-align: center;
-}
-
-.participation h3, .participation h4 {
-    color: white;
-}
-
 
 /*-------------- Navigation  Styling -------------*/
 nav {
@@ -146,8 +122,6 @@ nav a:hover {
     background-color: #601b1b;
 }
 
-
-
 /*-------------- Page Title  Styling -------------*/
 .title {
     text-align: center;
@@ -167,15 +141,6 @@ nav a:hover {
     line-height: 5px;
 }
 
-
-.contact img {
-    display: block;
-    float: right;
-    height: 200px;
-    width: auto;
-    margin-top: -196px;
-}
-
 /*-------------- Footer Styling -------------*/
 footer {
     width : 95%;
@@ -189,8 +154,56 @@ footer {
     text-align: center;
 }
 
-/*-------------- Form Styling -------------*/
+/*-------------- Home Page Styling -------------*/
+.res {
+    text-align: center;
+}
 
+.participation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7a1616;
+    color: white;
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+.participation h3, .participation h4 {
+    color: white;
+}
+
+/*-------------- Temple Information Page Styling -------------*/
+.tempOne h1, .tempTwo h1, .tempThree h1, .tempFour h1{
+    text-align: left;
+}
+
+.tempOne, .tempTwo, .tempThree, .tempFour {
+    border: 2px dashed #7A1616;
+    padding: 1rem;
+    margin: 1rem auto;   
+}
+
+#templeInfo li {
+    line-height: 20px;
+}
+
+#templeInfo h2 {
+    padding-top: 1rem;
+}
+
+#templeInfo img{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;   
+}
+
+/*-------------- Form Styling -------------*/
 form fieldset {
     margin: .5rem;
     border: 2px dashed #7A1616;
@@ -242,60 +255,30 @@ form input.submitBtn {
     font-size: 1.5rem;
 }
 
+/*-------------- Service and Amenities Page Styling -------------*/
+.service h2, .amenities h2 {
+    line-height: 2px;
+    color: white;
+}
 
-  .res {
-      text-align: center;
-  }
+.service li, .amenities li{
+    line-height: 30px;
+}
 
-  .service h2, .amenities h2 {
-      line-height: 2px;
-      color: white;
-  }
-
-  .service li, .amenities li{
-      line-height: 30px;
-  }
-
-  .service, .amenities {
+.service, .amenities {
     background-color: #7A1616;
     color: white;
     padding: 1rem;
     margin: 1rem;
-  }
-
-
-  .receptionInfo {
-      line-height: 20px;
-      background-color: #7A1616;
-      color: white;
-      margin-right: auto;
-      margin-left: auto;
-      padding: 1rem;
-      width: 95%;
-      height: auto; 
-  }
-
-  .receptionInfo h2 {
-      color: white;
-  }
-
-.receptionInfo a {
-    color:white;
-}
-
-.smallCon {
-    color: #7A1616;
-    text-align: center;
-    font-size: 25px;
-}
-
-.conInfo{
-    font-size: 25px;
-
 }
 
 .recLinks{
     text-align: center;
+}
+
+/*-------------- Missionary Suites Page Styling -------------*/
+.missHero li, .missHeroTwo li{
+    line-height: 30px;
 }
 
 .missHero, .missHeroTwo{
@@ -319,7 +302,7 @@ form input.submitBtn {
 #heroes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1fr;
+    grid-row-gap: 1rem;
     width: 100%;
     height: auto;
     margin:  1rem auto;
@@ -327,53 +310,63 @@ form input.submitBtn {
     justify-content: center;
 }
 
-.tempOne h1, .tempTwo h1, .tempThree h1, .tempFour h1{
-    text-align: left;
-
+/*-------------- Reception Information Page Styling -------------*/
+.receptionInfo {
+      line-height: 20px;
+      background-color: #7A1616;
+      color: white;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 1rem;
+      width: 95%;
+      height: auto; 
 }
 
-.tempOne, .tempTwo, .tempThree, .tempFour {
-    border: 2px dashed #7A1616;
-    padding: 1rem;
-    margin: 1rem auto;
-    
+.receptionInfo h2 {
+      color: white;
 }
 
-#templeInfo li {
-    line-height: 20px;
+.receptionInfo a {
+    color:white;
 }
 
-#templeInfo h2 {
-    padding-top: 1rem;
+/*-------------- Contact Us Link on Missionary and Reception Pages Styling -------------*/
+.smallCon {
+    color: #7A1616;
+    text-align: center;
+    font-size: 25px;
 }
 
-#templeInfo img{
-    display: block;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 1rem auto; 
-   
+.conInfo{
+    font-size: 25px;
 }
 
 /*----------- Small Devices (501px and down ----------*/
 @media screen and (max-width: 501px) {
 
-/*-------------- Navigation Styling -------------*/
+/*-------------- Header Styling for Small View -------------*/
+.headings h1 {
+    font-size: 25px;
+}
+    
+.headings h4 {
+    font-size: 18px;
+}
 
+/*-------------- Navigation Styling for Small View -------------*/
 .navigation {
     display: none;
 }
 
 .menubutton {
-        display : block;
-        font-size : 30px;
-        background-color : #7A1616;
-        color : white;
-        margin: 0rem auto;
-        padding: 1rem;
-        text-align : center;
-    }
+    display : block;
+    font-size : 30px;        
+    background-color : #7A1616;
+    color : white;
+    margin: 0rem auto;
+    padding: 1rem;
+    text-align : center;
+}
 
 .navlinks {
     display: none;
@@ -391,17 +384,16 @@ form input.submitBtn {
     margin: 0;
     padding: 0;
 } 
-    
+  
+/*-------------- Home Page Styling for Small View -------------*/
 .hero {
     text-align: center;
 }
 
 .temple img{
-
     width: 100%;
     height: auto;
-   
-  }
+}
 
 .templeAct{
     display: none;
@@ -426,6 +418,8 @@ form input.submitBtn {
     text-align: center;
 }   
 
+/*-------------- Services and Amenities Pages Styling for Small View -------------*/
+
 .service h2, .amenities h2 {
     text-align: center;
  }
@@ -438,17 +432,8 @@ form input.submitBtn {
    text-align: center;
 }
 
+/*-------------- Reception Page Styling for Small View -------------*/
 .conInfo{
     text-align: center;
-
 }
-
-.headings h1 {
-    font-size: 25px;
-}
-
-.headings h4 {
-    font-size: 18px;
-}
-
 }

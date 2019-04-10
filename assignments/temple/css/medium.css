@@ -1,11 +1,12 @@
 /* Medium Devices (501px and up) */
 @media screen and (min-width: 501px) { 
     
-/*-------------- Menu Styling-------------*/
+/*-------------- Menu Styling for Medium View -------------*/
 .menubutton {
      display: none;
 }
 
+/*-------------- Navigation Styling for Medium View -------------*/
 .navigation {
     display: inline-block;
     text-align : center;
@@ -30,6 +31,11 @@ nav a {
     padding: 0;
 }
 
+/*-------------- Home Page Styling for Medium View -------------*/
+.temple img{
+    width: 45%;
+    height: auto;
+}
 
 .templeAct, .templeActTwo {
     margin:  1rem auto;
@@ -53,6 +59,7 @@ nav a {
     font-size: 1.5rem;
 }
 
+/*-------------- Contact Us Page Styling for Medium View -------------*/
 iframe {
     margin: 1rem;
 }
@@ -64,16 +71,8 @@ iframe {
     width: 90%;
     height: auto;
     margin:  3rem auto;
-    padding: 1rem auto;
+    padding: 1rem;
     justify-content: center;
     line-height: 30px;
 }  
-
-.temple img{
-    width: 45%;
-    height: auto;
-  }
-
-
-
 }
