@@ -1,6 +1,6 @@
     function templeDataFour() { 
         var section = document.querySelector('.templeDataFour');
-        var requestURL = 'https://tessa-brown.github.io/temples.json';
+        var requestURL = 'https://tessa-brown.github.io/san-diego.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';

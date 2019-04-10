@@ -1,6 +1,6 @@
     function templeDataThree() { 
         var section = document.querySelector('.templeDataThree');
-        var requestURL = 'https://tessa-brown.github.io/temples.json';
+        var requestURL = 'https://tessa-brown.github.io/denver.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
