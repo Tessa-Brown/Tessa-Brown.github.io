@@ -17,14 +17,24 @@ nav li {
     box-shadow: 0 .5rem 1rem #666666;
 }
 
-.templeAct {
+.templeAct, .templeActTwo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1fr;
     width: 80%;
     height: auto;
-
 }
+
+.hotelImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1fr;
+    width: 90%;
+    height: auto;
+}
+
+
+
 
 /*-------------- Article Styling-------------*/
 
@@ -36,14 +46,18 @@ nav li {
  .hero {
      float: right;
      width: 54%;
-
  }
 
-
-  .smallTemp {
+.smallTemp {
     display: none;
 }
 
+.service h2 {
+    text-align: left;
+ }
 
+.service li {
+   text-align: left;
+}
   
 }
