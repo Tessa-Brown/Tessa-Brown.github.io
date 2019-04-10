@@ -65,14 +65,23 @@ header {
     width: 100%;
     height: auto;
 	text-align: center;
-    line-height: 8px;  
+    line-height: 10px;  
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;  
 }
 
+header img {
+    height: 100px;
+    width: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
 .headings {
     padding: 2rem;
-    height: 80px; 
+    height: 100px; 
     width: auto;
     margin-top: .5rem;
     padding: .5rem;
@@ -80,13 +89,6 @@ header {
 
 .headings h4 {
     color: white;
-}
-
-header img {
-    height: 80px;
-    width: auto;
-    margin-top: .5rem;
-    padding: 2rem;
 }
 
 /*-------------- Navigation  Styling -------------*/
@@ -346,9 +348,9 @@ form input.submitBtn {
 
 /*-------------- Header Styling for Small View -------------*/
 .headings h1 {
-    font-size: 25px;
+    font-size: 30px;
 }
-    
+
 .headings h4 {
     font-size: 18px;
 }
