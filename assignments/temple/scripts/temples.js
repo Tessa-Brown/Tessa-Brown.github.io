@@ -15,7 +15,7 @@
         
             for(var i=0; i < temples.length; i++){
 
-                var closures = towns[i].closures;
+                var closures = temples[i].closures;
                 var heading = document.createElement('h2');
                 var list = document.createElement('ul');
 
