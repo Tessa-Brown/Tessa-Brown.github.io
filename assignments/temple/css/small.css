@@ -171,17 +171,17 @@ footer a {
 
 .participation {
     margin: 0rem auto;
-    background-color: #7a1616;
-    color: white;
-    width: 95%;
+    border: 2px dashed #7A1616;
+    color: black;
+    width: 50%;
     height: auto;
     padding: 1rem;
-    line-height: 15px;
+    line-height: 25px;
     text-align: center;
 }
 
-.participation h3, .participation h4 {
-    color: white;
+.participation li{
+    line-height: 20px;
 }
 
 /*-------------- Temple Information Page Styling -------------*/
