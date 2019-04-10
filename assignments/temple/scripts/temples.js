@@ -13,7 +13,8 @@
         function showTemples(jsonData) {
             var temples = jsonData['temples'];
         
-           
+            for(var i=0; i < temples.length; i++){
+
             var closure = document.createElement('ul');
             closure.textContent = temples[i].closures;
 
@@ -28,6 +29,6 @@
     
           } 
         }
-    
+    }
     
     
