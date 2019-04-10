@@ -150,7 +150,7 @@ nav a:hover {
 /*-------------- Footer Styling -------------*/
 footer {
     width : 95%;
-    height: 65px;   
+    height: auto;  
     background-color : #7A1616;
     color : white;
     margin: 0 auto;
