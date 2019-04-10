@@ -170,15 +170,13 @@ footer a {
 }
 
 .participation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0rem auto;
     background-color: #7a1616;
     color: white;
-    width: 80%;
+    width: 95%;
     height: auto;
     padding: 1rem;
-    line-height: 20px;
+    line-height: 15px;
     text-align: center;
 }
 
