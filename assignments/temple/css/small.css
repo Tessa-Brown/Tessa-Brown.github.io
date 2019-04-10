@@ -143,7 +143,7 @@ nav a:hover {
     line-height: 5px;
 }
 
-.contact h3{
+.contact h3, .contact a{
     color:white;
 }
 
