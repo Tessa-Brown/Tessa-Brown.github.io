@@ -75,11 +75,14 @@ header {
     width: auto;
     margin-top: .5rem;
     padding: .5rem;
+    line-height: 20px;
+    
 }
 
 .headings h4 {
     color: white;
 }
+
 
 
 header img {
@@ -88,7 +91,6 @@ header img {
     margin-top: .5rem;
     padding: 2rem auto;
 }
-
 
 .missHero li, .missHeroTwo li{
     line-height: 30px;
@@ -359,6 +361,7 @@ form input.submitBtn {
 @media screen and (max-width: 501px) {
 
 /*-------------- Navigation Styling -------------*/
+
 .navigation {
     display: none;
 }
