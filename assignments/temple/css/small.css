@@ -202,11 +202,9 @@ footer {
 }
 
 #templeInfo img{
-    display: block;
-    justify-content: center;
     width: 100%;
     height: auto;
-    padding: 1rem;   
+    padding: 0rem;   
 }
 
 /*-------------- Form Styling -------------*/
